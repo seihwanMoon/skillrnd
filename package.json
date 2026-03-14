@@ -1,0 +1,21 @@
+{
+  "name": "ai-coding-skills-wiki",
+  "private": true,
+  "version": "0.1.0",
+  "description": "VitePress-based GitHub Pages site for curated AI coding skills in Korean.",
+  "scripts": {
+    "postinstall": "node scripts/fix-shiki.mjs",
+    "docs:dev": "vitepress dev docs --host 0.0.0.0",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "mermaid": "^11.4.1",
+    "shiki": "^2.4.2",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

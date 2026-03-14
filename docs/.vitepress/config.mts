@@ -1,0 +1,105 @@
+import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
+
+const owner = 'seihwanMoon'
+const repo = 'skillrnd'
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? ''
+const isUserSite = repoName.endsWith('.github.io')
+const base = process.env.VITEPRESS_BASE ?? (repoName && !isUserSite ? `/${repoName}/` : '/')
+const siteUrl = process.env.SITE_URL ?? `https://${owner}.github.io/${repo}/`
+const repoUrl = `https://github.com/${owner}/${repo}`
+
+export default withMermaid(
+  defineConfig({
+    lang: 'ko-KR',
+    title: 'AI Coding Skills Wiki',
+    description: '한국어로 정리한 AI coding skills 문서 허브',
+    base,
+    cleanUrls: true,
+    lastUpdated: true,
+    sitemap: {
+      hostname: siteUrl
+    },
+    markdown: {
+      lineNumbers: true
+    },
+    themeConfig: {
+      nav: [
+        { text: '홈', link: '/' },
+        { text: '계획서', link: '/project-plan' },
+        { text: '카테고리', link: '/categories/index' },
+        { text: '스킬', link: '/skills/index' },
+        { text: '레시피', link: '/recipes/index' },
+        { text: '다이어그램', link: '/diagrams/ecosystem-map' }
+      ],
+      sidebar: {
+        '/categories/': [
+          {
+            text: '카테고리',
+            items: [
+              { text: '허브', link: '/categories/index' },
+              { text: 'Codex', link: '/categories/codex' },
+              { text: '문서화', link: '/categories/docs' },
+              { text: '테스트', link: '/categories/testing' },
+              { text: 'MCP', link: '/categories/mcp' }
+            ]
+          }
+        ],
+        '/skills/': [
+          {
+            text: '스킬',
+            items: [
+              { text: '목록', link: '/skills/index' },
+              { text: 'repo-intelligence', link: '/skills/repo-intelligence' },
+              { text: 'playwright', link: '/skills/playwright' },
+              { text: 'chatgpt-apps', link: '/skills/chatgpt-apps' }
+            ]
+          }
+        ],
+        '/recipes/': [
+          {
+            text: '레시피',
+            items: [
+              { text: '목록', link: '/recipes/index' },
+              { text: '저장소 분석', link: '/recipes/repo-analysis' },
+              { text: '문서 생성', link: '/recipes/docs-generation' }
+            ]
+          }
+        ],
+        '/diagrams/': [
+          {
+            text: '다이어그램',
+            items: [
+              { text: '생태계 맵', link: '/diagrams/ecosystem-map' }
+            ]
+          }
+        ],
+        '/references/': [
+          {
+            text: '레퍼런스',
+            items: [
+              { text: '저장소 목록', link: '/references/repos' }
+            ]
+          }
+        ]
+      },
+      socialLinks: [
+        { icon: 'github', link: repoUrl }
+      ],
+      footer: {
+        message: 'Built with VitePress and published on GitHub Pages.',
+        copyright: 'Copyright © 2026'
+      },
+      editLink: {
+        pattern: `${repoUrl}/edit/main/docs/:path`,
+        text: '이 페이지 편집 제안'
+      },
+      search: {
+        provider: 'local'
+      }
+    },
+    mermaid: {
+      theme: 'default'
+    }
+  })
+)
