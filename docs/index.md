@@ -28,6 +28,7 @@ features:
 ## 시작
 
 - [프로젝트 계획서](./project-plan.md)
+- [개발 인수인계 노트](./dev-handoff.md)
 - [카테고리 허브](./categories/index.md)
 - [스킬 목록](./skills/index.md)
 - [레시피](./recipes/index.md)
@@ -39,4 +40,3 @@ features:
 - 문서 구조 표준화
 - `GitHub Pages`에 정적 배포
 - 자동 생성기 없이도 운영 가능한 정보 구조 확립
-
