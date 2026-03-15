@@ -32,6 +32,9 @@ outline: deep
   - `Korea Picks`
   - `Rankings`
 - 홈 페이지를 출판형 구조로 개편
+- 동적 사이드바 도입
+- Markdown 생성/삭제 스크립트 추가
+- 개발/콘텐츠 운영 문서 추가
 
 ## 1. 현재까지 완료한 작업
 
@@ -84,6 +87,8 @@ outline: deep
 - [docs/project-plan.md](D:/CODE/AICODE/skillrnd/docs/project-plan.md)
 - [docs/.vitepress/config.mts](D:/CODE/AICODE/skillrnd/docs/.vitepress/config.mts)
 - [docs/index.md](D:/CODE/AICODE/skillrnd/docs/index.md)
+- [docs/development-guide.md](D:/CODE/AICODE/skillrnd/docs/development-guide.md)
+- [docs/content-operations.md](D:/CODE/AICODE/skillrnd/docs/content-operations.md)
 - [docs/blog/index.md](D:/CODE/AICODE/skillrnd/docs/blog/index.md)
 - [docs/vibe-coding/index.md](D:/CODE/AICODE/skillrnd/docs/vibe-coding/index.md)
 - [docs/manufacturing-ai/index.md](D:/CODE/AICODE/skillrnd/docs/manufacturing-ai/index.md)
@@ -107,6 +112,7 @@ outline: deep
 - [docs/references/external-repositories.md](D:/CODE/AICODE/skillrnd/docs/references/external-repositories.md)
 - [docs/references/repos.md](D:/CODE/AICODE/skillrnd/docs/references/repos.md)
 - [scripts/fix-shiki.mjs](D:/CODE/AICODE/skillrnd/scripts/fix-shiki.mjs)
+- [scripts/content-manager.mjs](D:/CODE/AICODE/skillrnd/scripts/content-manager.mjs)
 - [deploy.yml](D:/CODE/AICODE/skillrnd/.github/workflows/deploy.yml)
 
 ## 3. 확인된 기술 상태
@@ -155,7 +161,7 @@ outline: deep
 2. `docs/skills/` 문서를 10개 이상으로 확장
 3. `references/repos.md`를 `local`과 `external`로 분리
 4. 각 상위 섹션에 실제 콘텐츠를 2~3개씩 채우기
-5. 외부 저장소를 별도 섹션으로 완전히 분리할지 결정
+5. Korea Picks와 Manufacturing AI 실문서 추가
 6. 비교 페이지 또는 추천 페이지를 새로 추가
 
 ## 6. 내일 작업 체크리스트
@@ -172,6 +178,9 @@ outline: deep
 - [x] 레시피 문서에 실제 활용 흐름 추가
 - [x] 홈 페이지 문구와 첫인상 개선
 - [x] 주요 상위 섹션 추가
+- [x] 동적 사이드바 적용
+- [x] Markdown 생성/삭제 기능 추가
+- [x] 개발 운영 문서 작성
 - [ ] 비교 페이지 추가 여부 결정
 
 ## 7. 추천 작업 순서
@@ -226,4 +235,4 @@ git log -1 --oneline
 
 ## 10. 현재 판단
 
-지금 상태는 "기초 인프라 완료, 10개 문서 확보, 상위 출판형 섹션 형성" 단계다. 다음 작업은 각 상위 섹션에 실제 글과 큐레이션 보드를 채우고, 비교 전용 페이지를 도입하는 쪽이 가장 효율적이다.
+지금 상태는 "기초 인프라 완료, 출판형 섹션 형성, Markdown 운영 자동화 적용" 단계다. 다음 작업은 각 상위 섹션에 실제 글과 큐레이션 보드를 채우고, 비교 전용 페이지를 도입하는 쪽이 가장 효율적이다.

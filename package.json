@@ -1,10 +1,12 @@
 {
-  "name": "ai-coding-skills-wiki",
+  "name": "moonworld-ai-workbench",
   "private": true,
   "version": "0.1.0",
-  "description": "VitePress-based GitHub Pages site for curated AI coding skills in Korean.",
+  "description": "VitePress-based publishing site for AI skills, vibe coding, and manufacturing AI in Korean.",
   "scripts": {
     "postinstall": "node scripts/fix-shiki.mjs",
+    "content:new": "node scripts/content-manager.mjs new",
+    "content:remove": "node scripts/content-manager.mjs remove",
     "docs:dev": "vitepress dev docs --host 0.0.0.0",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs --host 0.0.0.0"

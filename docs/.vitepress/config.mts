@@ -1,3 +1,6 @@
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
+import { relative, resolve, sep } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 
@@ -7,12 +10,101 @@ const customHost = 'https://blog.moonworld.uk'
 const base = process.env.VITEPRESS_BASE ?? '/'
 const siteUrl = process.env.SITE_URL ?? `${customHost}/`
 const repoUrl = `https://github.com/${owner}/${repo}`
+const docsRoot = resolve(fileURLToPath(new URL('..', import.meta.url)))
+
+type SidebarEntry = {
+  dateWeight: number
+  hidden: boolean
+  label: string
+  link: string
+  order: number
+}
+
+function toPosix(value: string): string {
+  return value.split(sep).join('/')
+}
+
+function humanize(slug: string): string {
+  return slug
+    .replace(/[-_]/g, ' ')
+    .replace(/\b\w/g, (char) => char.toUpperCase())
+}
+
+function parseFrontmatter(filePath: string): Record<string, string> {
+  const source = readFileSync(filePath, 'utf8')
+  const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+  if (!match) return {}
+
+  const values: Record<string, string> = {}
+  for (const line of match[1].split(/\r?\n/)) {
+    const parsed = line.match(/^([A-Za-z0-9_-]+):\s*(.+)$/)
+    if (!parsed) continue
+    values[parsed[1]] = parsed[2].replace(/^['"]|['"]$/g, '')
+  }
+  return values
+}
+
+function walkMarkdownFiles(dirPath: string): string[] {
+  if (!existsSync(dirPath)) return []
+
+  const entries = readdirSync(dirPath, { withFileTypes: true })
+  const files: string[] = []
+
+  for (const entry of entries) {
+    if (entry.name.startsWith('.')) continue
+    const fullPath = resolve(dirPath, entry.name)
+    if (entry.isDirectory()) {
+      files.push(...walkMarkdownFiles(fullPath))
+      continue
+    }
+    if (entry.isFile() && entry.name.endsWith('.md')) {
+      files.push(fullPath)
+    }
+  }
+
+  return files
+}
+
+function buildSidebarItems(section: string): Array<{ text: string; link: string }> {
+  const sectionDir = resolve(docsRoot, section)
+  const items = walkMarkdownFiles(sectionDir)
+    .map((filePath): SidebarEntry => {
+      const relativePath = toPosix(relative(sectionDir, filePath)).replace(/\.md$/, '')
+      const meta = parseFrontmatter(filePath)
+      const slug = relativePath === 'index' ? 'index' : relativePath
+      const label = meta.sidebar_label ?? meta.title ?? (slug === 'index' ? '허브' : humanize(slug.split('/').pop() ?? slug))
+      const link = `/${section}/${relativePath}`
+      const order = Number(meta.sidebar_order ?? (slug === 'index' ? -1000 : 0))
+      const hidden = meta.sidebar_hidden === 'true'
+      const parsedDate = meta.date ? Date.parse(meta.date) : Number.NaN
+      const dateWeight = Number.isNaN(parsedDate) ? 0 : -parsedDate
+      return { dateWeight, hidden, label, link, order }
+    })
+    .filter((item) => !item.hidden)
+    .sort((left, right) => {
+      if (left.order !== right.order) return left.order - right.order
+      if (left.dateWeight !== right.dateWeight) return left.dateWeight - right.dateWeight
+      return left.label.localeCompare(right.label, 'ko')
+    })
+    .map((item) => ({ text: item.label, link: item.link }))
+
+  return items
+}
+
+function buildSidebarSection(section: string, text: string) {
+  return [
+    {
+      text,
+      items: buildSidebarItems(section)
+    }
+  ]
+}
 
 export default withMermaid(
   defineConfig({
     lang: 'ko-KR',
-    title: 'AI Coding Skills Wiki',
-    description: '한국어로 정리한 AI coding skills 문서 허브',
+    title: 'Moonworld AI Workbench',
+    description: '한국어 기반의 AI 작업 허브. 스킬 문서, 바이브 코딩, 제조 AI, 한국 특화 큐레이션을 다룬다.',
     base,
     cleanUrls: true,
     lastUpdated: true,
@@ -35,108 +127,16 @@ export default withMermaid(
         { text: '레시피', link: '/recipes/index' }
       ],
       sidebar: {
-        '/blog/': [
-          {
-            text: '블로그',
-            items: [
-              { text: '허브', link: '/blog/index' },
-              { text: '사이트 방향', link: '/blog/building-this-hub' }
-            ]
-          }
-        ],
-        '/categories/': [
-          {
-            text: '카테고리',
-            items: [
-              { text: '허브', link: '/categories/index' },
-              { text: 'Codex', link: '/categories/codex' },
-              { text: '문서화', link: '/categories/docs' },
-              { text: '테스트', link: '/categories/testing' },
-              { text: 'MCP', link: '/categories/mcp' }
-            ]
-          }
-        ],
-        '/skills/': [
-          {
-            text: '스킬',
-            items: [
-              { text: '목록', link: '/skills/index' },
-              { text: 'repo-intelligence', link: '/skills/repo-intelligence' },
-              { text: 'playwright', link: '/skills/playwright' },
-              { text: 'playwright-interactive', link: '/skills/playwright-interactive' },
-              { text: 'chatgpt-apps', link: '/skills/chatgpt-apps' },
-              { text: 'skill-creator', link: '/skills/skill-creator' },
-              { text: 'skill-installer', link: '/skills/skill-installer' },
-              { text: 'openai/skills', link: '/skills/openai-skills' },
-              { text: 'vercel-labs/skills', link: '/skills/vercel-labs-skills' },
-              { text: 'Repomix', link: '/skills/repomix' },
-              { text: 'Gitingest', link: '/skills/gitingest' }
-            ]
-          }
-        ],
-        '/recipes/': [
-          {
-            text: '레시피',
-            items: [
-              { text: '목록', link: '/recipes/index' },
-              { text: '저장소 분석', link: '/recipes/repo-analysis' },
-              { text: '문서 생성', link: '/recipes/docs-generation' },
-              { text: '카탈로그 큐레이션', link: '/recipes/skill-catalog-curation' }
-            ]
-          }
-        ],
-        '/vibe-coding/': [
-          {
-            text: 'Vibe Coding',
-            items: [
-              { text: '허브', link: '/vibe-coding/index' }
-            ]
-          }
-        ],
-        '/manufacturing-ai/': [
-          {
-            text: 'Manufacturing AI',
-            items: [
-              { text: '허브', link: '/manufacturing-ai/index' }
-            ]
-          }
-        ],
-        '/korea-picks/': [
-          {
-            text: 'Korea Picks',
-            items: [
-              { text: '허브', link: '/korea-picks/index' }
-            ]
-          }
-        ],
-        '/rankings/': [
-          {
-            text: '랭킹',
-            items: [
-              { text: '허브', link: '/rankings/index' },
-              { text: '평가 방법론', link: '/rankings/methodology' }
-            ]
-          }
-        ],
-        '/diagrams/': [
-          {
-            text: '다이어그램',
-            items: [
-              { text: '생태계 맵', link: '/diagrams/ecosystem-map' }
-            ]
-          }
-        ],
-        '/references/': [
-          {
-            text: '레퍼런스',
-            items: [
-              { text: '허브', link: '/references/index' },
-              { text: '로컬 스킬', link: '/references/local-skills' },
-              { text: '외부 저장소', link: '/references/external-repositories' },
-              { text: '저장소 목록', link: '/references/repos' }
-            ]
-          }
-        ]
+        '/blog/': buildSidebarSection('blog', '블로그'),
+        '/categories/': buildSidebarSection('categories', '카테고리'),
+        '/skills/': buildSidebarSection('skills', '스킬'),
+        '/recipes/': buildSidebarSection('recipes', '레시피'),
+        '/vibe-coding/': buildSidebarSection('vibe-coding', 'Vibe Coding'),
+        '/manufacturing-ai/': buildSidebarSection('manufacturing-ai', 'Manufacturing AI'),
+        '/korea-picks/': buildSidebarSection('korea-picks', 'Korea Picks'),
+        '/rankings/': buildSidebarSection('rankings', '랭킹'),
+        '/diagrams/': buildSidebarSection('diagrams', '다이어그램'),
+        '/references/': buildSidebarSection('references', '레퍼런스')
       },
       socialLinks: [
         { icon: 'github', link: repoUrl }
