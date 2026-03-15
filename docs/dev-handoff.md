@@ -37,6 +37,9 @@ outline: deep
 - 개발/콘텐츠 운영 문서 추가
 - 공개 `이 페이지 편집 제안` 링크 제거
 - `/admin` CMS 화면과 Admin 운영 가이드 추가
+- 상단 메뉴 축소
+- 전역 2단계 사이드바 구조로 개편
+- GitHub 웹 편집용 템플릿 추가
 
 ## 1. 현재까지 완료한 작업
 
@@ -92,6 +95,7 @@ outline: deep
 - [docs/development-guide.md](D:/CODE/AICODE/skillrnd/docs/development-guide.md)
 - [docs/content-operations.md](D:/CODE/AICODE/skillrnd/docs/content-operations.md)
 - [docs/admin-guide.md](D:/CODE/AICODE/skillrnd/docs/admin-guide.md)
+- [docs/templates/blog-post-template.md](D:/CODE/AICODE/skillrnd/docs/templates/blog-post-template.md)
 - [docs/blog/index.md](D:/CODE/AICODE/skillrnd/docs/blog/index.md)
 - [docs/vibe-coding/index.md](D:/CODE/AICODE/skillrnd/docs/vibe-coding/index.md)
 - [docs/manufacturing-ai/index.md](D:/CODE/AICODE/skillrnd/docs/manufacturing-ai/index.md)
@@ -188,6 +192,9 @@ outline: deep
 - [x] 개발 운영 문서 작성
 - [x] 공개 편집 링크 제거
 - [x] `/admin` CMS 화면 추가
+- [x] 상단 메뉴 축소
+- [x] 2단계 사이드바 적용
+- [x] GitHub 웹 편집 템플릿 추가
 - [ ] `/admin` 라이브 인증 방식 결정
 - [ ] 비교 페이지 추가 여부 결정
 

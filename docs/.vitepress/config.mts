@@ -91,15 +91,6 @@ function buildSidebarItems(section: string): Array<{ text: string; link: string 
   return items
 }
 
-function buildSidebarSection(section: string, text: string) {
-  return [
-    {
-      text,
-      items: buildSidebarItems(section)
-    }
-  ]
-}
-
 export default withMermaid(
   defineConfig({
     lang: 'ko-KR',
@@ -118,26 +109,40 @@ export default withMermaid(
       nav: [
         { text: '홈', link: '/' },
         { text: '블로그', link: '/blog/index' },
-        { text: '스킬 허브', link: '/skills/index' },
-        { text: 'Vibe Coding', link: '/vibe-coding/index' },
         { text: '제조 AI', link: '/manufacturing-ai/index' },
-        { text: 'Korea Picks', link: '/korea-picks/index' },
-        { text: '랭킹', link: '/rankings/index' },
-        { text: '계획서', link: '/project-plan' },
-        { text: '레시피', link: '/recipes/index' }
+        { text: 'Vibe Coding', link: '/vibe-coding/index' },
+        {
+          text: '허브',
+          items: [
+            { text: '스킬 허브', link: '/skills/index' },
+            { text: 'Korea Picks', link: '/korea-picks/index' },
+            { text: '랭킹', link: '/rankings/index' }
+          ]
+        }
       ],
-      sidebar: {
-        '/blog/': buildSidebarSection('blog', '블로그'),
-        '/categories/': buildSidebarSection('categories', '카테고리'),
-        '/skills/': buildSidebarSection('skills', '스킬'),
-        '/recipes/': buildSidebarSection('recipes', '레시피'),
-        '/vibe-coding/': buildSidebarSection('vibe-coding', 'Vibe Coding'),
-        '/manufacturing-ai/': buildSidebarSection('manufacturing-ai', 'Manufacturing AI'),
-        '/korea-picks/': buildSidebarSection('korea-picks', 'Korea Picks'),
-        '/rankings/': buildSidebarSection('rankings', '랭킹'),
-        '/diagrams/': buildSidebarSection('diagrams', '다이어그램'),
-        '/references/': buildSidebarSection('references', '레퍼런스')
-      },
+      sidebar: [
+        { text: '홈', link: '/' },
+        {
+          text: '블로그',
+          items: buildSidebarItems('blog')
+        },
+        {
+          text: '제조 AI',
+          items: buildSidebarItems('manufacturing-ai')
+        },
+        {
+          text: 'Vibe Coding',
+          items: buildSidebarItems('vibe-coding')
+        },
+        {
+          text: '허브',
+          items: [
+            { text: '스킬 허브', link: '/skills/index' },
+            { text: 'Korea Picks', link: '/korea-picks/index' },
+            { text: '랭킹', link: '/rankings/index' }
+          ]
+        }
+      ],
       socialLinks: [
         { icon: 'github', link: repoUrl }
       ],
