@@ -3,10 +3,11 @@ import { withMermaid } from 'vitepress-plugin-mermaid'
 
 const owner = 'seihwanMoon'
 const repo = 'skillrnd'
+const customHost = 'https://blog.moonworld.uk'
 const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? ''
 const isUserSite = repoName.endsWith('.github.io')
 const base = process.env.VITEPRESS_BASE ?? (repoName && !isUserSite ? `/${repoName}/` : '/')
-const siteUrl = process.env.SITE_URL ?? `https://${owner}.github.io/${repo}/`
+const siteUrl = process.env.SITE_URL ?? (isUserSite ? `${customHost}/` : `${customHost}/${repo}/`)
 const repoUrl = `https://github.com/${owner}/${repo}`
 
 export default withMermaid(
