@@ -9,6 +9,8 @@ outline: deep
 
 ## 0. 오늘 추가 진행 내용
 
+- 현재 상태 요약 문서 추가: [현재 개발 상태](./current-status.md)
+
 - GitHub Pages 라이브 URL 확인: [seihwanMoon.github.io/skillrnd](https://seihwanMoon.github.io/skillrnd/)
 - skill 문서 3개 추가
   - `playwright-interactive`
@@ -47,7 +49,7 @@ outline: deep
 
 - 서비스 형태를 `GitHub Pages` 기반 정적 문서 사이트로 확정했다.
 - 사이트 엔진은 `VitePress`로 선택했다.
-- 제품 방향은 `AI Coding Skills Wiki`로 정리했다.
+- 제품 방향은 이후 `Moonworld AI Workbench`로 확장했다.
 - 핵심 산출물은 `설명`, `분류`, `Mermaid`, `원문 링크`, `레시피`다.
 
 ### 1.2 문서 구조와 계획 수립
@@ -77,11 +79,14 @@ outline: deep
 - 원격 저장소: [seihwanMoon/skillrnd](https://github.com/seihwanMoon/skillrnd)
 - 기본 브랜치: `main`
 - 초기 커밋 푸시 완료
-- 라이브 사이트 확인 완료: [seihwanMoon.github.io/skillrnd](https://seihwanMoon.github.io/skillrnd/)
+- 라이브 사이트 운영 도메인: [blog.moonworld.uk](https://blog.moonworld.uk/)
 
-최신 커밋:
+최근 핵심 커밋:
 
-- `7b1cbf8` `Initial VitePress skills wiki scaffold`
+- `f76557f` `Simplify nav and add GitHub edit templates`
+- `0004258` `Add admin CMS scaffold and hide edit links`
+- `2e9f329` `Add content operations workflow`
+- `f7674e8` `Add editorial top-level sections`
 
 ## 2. 현재 파일 구조
 
@@ -90,6 +95,7 @@ outline: deep
 - [README.md](D:/CODE/AICODE/skillrnd/README.md)
 - [package.json](D:/CODE/AICODE/skillrnd/package.json)
 - [docs/project-plan.md](D:/CODE/AICODE/skillrnd/docs/project-plan.md)
+- [docs/current-status.md](D:/CODE/AICODE/skillrnd/docs/current-status.md)
 - [docs/.vitepress/config.mts](D:/CODE/AICODE/skillrnd/docs/.vitepress/config.mts)
 - [docs/index.md](D:/CODE/AICODE/skillrnd/docs/index.md)
 - [docs/development-guide.md](D:/CODE/AICODE/skillrnd/docs/development-guide.md)
@@ -242,6 +248,7 @@ git log -1 --oneline
 
 ## 9. 다음 세션에서 먼저 볼 파일
 
+- [docs/current-status.md](D:/CODE/AICODE/skillrnd/docs/current-status.md)
 - [docs/dev-handoff.md](D:/CODE/AICODE/skillrnd/docs/dev-handoff.md)
 - [docs/project-plan.md](D:/CODE/AICODE/skillrnd/docs/project-plan.md)
 - [docs/.vitepress/config.mts](D:/CODE/AICODE/skillrnd/docs/.vitepress/config.mts)
