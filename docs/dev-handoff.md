@@ -22,6 +22,9 @@ outline: deep
   - `Repomix`
   - `Gitingest`
 - `references`를 허브, 로컬 스킬, 외부 저장소로 분리 시작
+- 카테고리 문서에 비교 기준과 추천 흐름 추가
+- 레시피 문서를 실제 workflow 중심으로 확장
+- `skill-catalog-curation` recipe 추가
 
 ## 1. 현재까지 완료한 작업
 
@@ -84,6 +87,7 @@ outline: deep
 - [docs/skills/gitingest.md](D:/CODE/AICODE/skillrnd/docs/skills/gitingest.md)
 - [docs/categories/index.md](D:/CODE/AICODE/skillrnd/docs/categories/index.md)
 - [docs/recipes/index.md](D:/CODE/AICODE/skillrnd/docs/recipes/index.md)
+- [docs/recipes/skill-catalog-curation.md](D:/CODE/AICODE/skillrnd/docs/recipes/skill-catalog-curation.md)
 - [docs/diagrams/ecosystem-map.md](D:/CODE/AICODE/skillrnd/docs/diagrams/ecosystem-map.md)
 - [docs/dev-handoff.md](D:/CODE/AICODE/skillrnd/docs/dev-handoff.md)
 - [docs/references/index.md](D:/CODE/AICODE/skillrnd/docs/references/index.md)
@@ -138,9 +142,9 @@ outline: deep
 1. 실제 분석 대상 skill 후보 10개를 문서 기준으로 확정
 2. `docs/skills/` 문서를 10개 이상으로 확장
 3. `references/repos.md`를 `local`과 `external`로 분리
-4. 카테고리 페이지에 비교 기준과 추천 섹션 보강
-5. 홈 페이지 문구와 첫인상 개선
-6. recipe 문서를 실제 워크플로우 중심으로 확장
+4. 홈 페이지 문구와 첫인상 개선
+5. 외부 저장소를 별도 섹션으로 완전히 분리할지 결정
+6. 비교 페이지 또는 추천 페이지를 새로 추가
 
 ## 6. 내일 작업 체크리스트
 
@@ -152,8 +156,9 @@ outline: deep
 - [x] 1차 문서 5개 작성
 - [x] `docs/skills/` 문서 10개 도달
 - [x] `references` 분리 시작
-- [ ] 카테고리별 추천 문서 연결
-- [ ] 레시피 문서에 실제 활용 흐름 추가
+- [x] 카테고리별 추천 문서 연결
+- [x] 레시피 문서에 실제 활용 흐름 추가
+- [ ] 비교 페이지 추가 여부 결정
 
 ## 7. 추천 작업 순서
 
@@ -207,4 +212,4 @@ git log -1 --oneline
 
 ## 10. 현재 판단
 
-지금 상태는 "기초 인프라 완료, 10개 문서 확보, 레퍼런스 분리 시작" 단계다. 다음 작업은 카테고리별 비교와 추천 구조를 강화하고, 외부 저장소 문서를 별도 섹션으로 완전히 분리할지 결정하는 쪽이 가장 효율적이다.
+지금 상태는 "기초 인프라 완료, 10개 문서 확보, 비교 가능한 카테고리/레시피 구조 형성" 단계다. 다음 작업은 홈 페이지 메시지 강화와 비교 전용 페이지 도입 여부를 결정하는 쪽이 가장 효율적이다.

@@ -10,4 +10,4 @@ title: 레시피
 
 - [저장소 분석 레시피](./repo-analysis.md)
 - [문서 생성 레시피](./docs-generation.md)
-
+- [스킬 카탈로그 큐레이션 레시피](./skill-catalog-curation.md)
