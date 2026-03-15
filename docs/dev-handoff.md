@@ -25,6 +25,13 @@ outline: deep
 - 카테고리 문서에 비교 기준과 추천 흐름 추가
 - 레시피 문서를 실제 workflow 중심으로 확장
 - `skill-catalog-curation` recipe 추가
+- 상위 섹션 추가
+  - `Blog`
+  - `Vibe Coding`
+  - `Manufacturing AI`
+  - `Korea Picks`
+  - `Rankings`
+- 홈 페이지를 출판형 구조로 개편
 
 ## 1. 현재까지 완료한 작업
 
@@ -77,6 +84,11 @@ outline: deep
 - [docs/project-plan.md](D:/CODE/AICODE/skillrnd/docs/project-plan.md)
 - [docs/.vitepress/config.mts](D:/CODE/AICODE/skillrnd/docs/.vitepress/config.mts)
 - [docs/index.md](D:/CODE/AICODE/skillrnd/docs/index.md)
+- [docs/blog/index.md](D:/CODE/AICODE/skillrnd/docs/blog/index.md)
+- [docs/vibe-coding/index.md](D:/CODE/AICODE/skillrnd/docs/vibe-coding/index.md)
+- [docs/manufacturing-ai/index.md](D:/CODE/AICODE/skillrnd/docs/manufacturing-ai/index.md)
+- [docs/korea-picks/index.md](D:/CODE/AICODE/skillrnd/docs/korea-picks/index.md)
+- [docs/rankings/index.md](D:/CODE/AICODE/skillrnd/docs/rankings/index.md)
 - [docs/skills/index.md](D:/CODE/AICODE/skillrnd/docs/skills/index.md)
 - [docs/skills/playwright-interactive.md](D:/CODE/AICODE/skillrnd/docs/skills/playwright-interactive.md)
 - [docs/skills/skill-creator.md](D:/CODE/AICODE/skillrnd/docs/skills/skill-creator.md)
@@ -142,7 +154,7 @@ outline: deep
 1. 실제 분석 대상 skill 후보 10개를 문서 기준으로 확정
 2. `docs/skills/` 문서를 10개 이상으로 확장
 3. `references/repos.md`를 `local`과 `external`로 분리
-4. 홈 페이지 문구와 첫인상 개선
+4. 각 상위 섹션에 실제 콘텐츠를 2~3개씩 채우기
 5. 외부 저장소를 별도 섹션으로 완전히 분리할지 결정
 6. 비교 페이지 또는 추천 페이지를 새로 추가
 
@@ -158,6 +170,8 @@ outline: deep
 - [x] `references` 분리 시작
 - [x] 카테고리별 추천 문서 연결
 - [x] 레시피 문서에 실제 활용 흐름 추가
+- [x] 홈 페이지 문구와 첫인상 개선
+- [x] 주요 상위 섹션 추가
 - [ ] 비교 페이지 추가 여부 결정
 
 ## 7. 추천 작업 순서
@@ -212,4 +226,4 @@ git log -1 --oneline
 
 ## 10. 현재 판단
 
-지금 상태는 "기초 인프라 완료, 10개 문서 확보, 비교 가능한 카테고리/레시피 구조 형성" 단계다. 다음 작업은 홈 페이지 메시지 강화와 비교 전용 페이지 도입 여부를 결정하는 쪽이 가장 효율적이다.
+지금 상태는 "기초 인프라 완료, 10개 문서 확보, 상위 출판형 섹션 형성" 단계다. 다음 작업은 각 상위 섹션에 실제 글과 큐레이션 보드를 채우고, 비교 전용 페이지를 도입하는 쪽이 가장 효율적이다.

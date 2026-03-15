@@ -25,13 +25,25 @@ export default withMermaid(
     themeConfig: {
       nav: [
         { text: '홈', link: '/' },
+        { text: '블로그', link: '/blog/index' },
+        { text: '스킬 허브', link: '/skills/index' },
+        { text: 'Vibe Coding', link: '/vibe-coding/index' },
+        { text: '제조 AI', link: '/manufacturing-ai/index' },
+        { text: 'Korea Picks', link: '/korea-picks/index' },
+        { text: '랭킹', link: '/rankings/index' },
         { text: '계획서', link: '/project-plan' },
-        { text: '카테고리', link: '/categories/index' },
-        { text: '스킬', link: '/skills/index' },
-        { text: '레시피', link: '/recipes/index' },
-        { text: '다이어그램', link: '/diagrams/ecosystem-map' }
+        { text: '레시피', link: '/recipes/index' }
       ],
       sidebar: {
+        '/blog/': [
+          {
+            text: '블로그',
+            items: [
+              { text: '허브', link: '/blog/index' },
+              { text: '사이트 방향', link: '/blog/building-this-hub' }
+            ]
+          }
+        ],
         '/categories/': [
           {
             text: '카테고리',
@@ -68,7 +80,41 @@ export default withMermaid(
             items: [
               { text: '목록', link: '/recipes/index' },
               { text: '저장소 분석', link: '/recipes/repo-analysis' },
-              { text: '문서 생성', link: '/recipes/docs-generation' }
+              { text: '문서 생성', link: '/recipes/docs-generation' },
+              { text: '카탈로그 큐레이션', link: '/recipes/skill-catalog-curation' }
+            ]
+          }
+        ],
+        '/vibe-coding/': [
+          {
+            text: 'Vibe Coding',
+            items: [
+              { text: '허브', link: '/vibe-coding/index' }
+            ]
+          }
+        ],
+        '/manufacturing-ai/': [
+          {
+            text: 'Manufacturing AI',
+            items: [
+              { text: '허브', link: '/manufacturing-ai/index' }
+            ]
+          }
+        ],
+        '/korea-picks/': [
+          {
+            text: 'Korea Picks',
+            items: [
+              { text: '허브', link: '/korea-picks/index' }
+            ]
+          }
+        ],
+        '/rankings/': [
+          {
+            text: '랭킹',
+            items: [
+              { text: '허브', link: '/rankings/index' },
+              { text: '평가 방법론', link: '/rankings/methodology' }
             ]
           }
         ],
