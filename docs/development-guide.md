@@ -97,12 +97,19 @@ npm run content:new -- --section blog --title "새 글 제목"
 npm run content:remove -- --section blog --slug new-post-title
 ```
 
+CMS 프록시:
+
+```bash
+npm run cms:proxy
+```
+
 ## 6. 운영 시 주의점
 
 - 허브 페이지의 수동 추천 목록은 자동 업데이트되지 않는다.
 - 사이드바는 자동이지만, 홈과 허브의 큐레이션 문구는 사람이 관리한다.
 - `docs/.vitepress/dist`는 빌드 산출물이며 Git 추적 대상이 아니다.
 - `mermaid`, `shiki` 버전은 함부로 올리지 않는다.
+- `/admin`은 UI만 배포되며, 라이브 GitHub 편집에는 별도 인증 구성이 필요하다.
 
 ## 7. 추천 다음 단계
 
@@ -110,4 +117,3 @@ npm run content:remove -- --section blog --slug new-post-title
 - `korea-picks` 하위 문서 작성
 - `rankings`용 메타데이터 수집 스크립트 설계
 - `skills`와 `external repositories` 완전 분리 여부 결정
-

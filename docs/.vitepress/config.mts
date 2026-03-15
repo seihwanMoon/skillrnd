@@ -145,10 +145,6 @@ export default withMermaid(
         message: 'Built with VitePress and published on GitHub Pages.',
         copyright: 'Copyright © 2026'
       },
-      editLink: {
-        pattern: `${repoUrl}/edit/main/docs/:path`,
-        text: '이 페이지 편집 제안'
-      },
       search: {
         provider: 'local'
       }

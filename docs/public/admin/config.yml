@@ -1,0 +1,149 @@
+local_backend: true
+
+backend:
+  name: github
+  repo: seihwanMoon/skillrnd
+  branch: main
+  use_graphql: true
+
+media_folder: docs/public/uploads
+public_folder: /uploads
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - label: Blog
+    name: blog
+    folder: docs/blog
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false }
+      - { label: "Sidebar Order", name: "sidebar_order", widget: "number", required: false, value_type: "int" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: Skills
+    name: skills
+    folder: docs/skills
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false }
+      - { label: "Sidebar Order", name: "sidebar_order", widget: "number", required: false, value_type: "int" }
+      - { label: "Outline", name: "outline", widget: "hidden", default: "deep" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: Recipes
+    name: recipes
+    folder: docs/recipes
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false }
+      - { label: "Sidebar Order", name: "sidebar_order", widget: "number", required: false, value_type: "int" }
+      - { label: "Outline", name: "outline", widget: "hidden", default: "deep" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: Vibe Coding
+    name: vibe_coding
+    folder: docs/vibe-coding
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false }
+      - { label: "Sidebar Order", name: "sidebar_order", widget: "number", required: false, value_type: "int" }
+      - { label: "Outline", name: "outline", widget: "hidden", default: "deep" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: Manufacturing AI
+    name: manufacturing_ai
+    folder: docs/manufacturing-ai
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false }
+      - { label: "Sidebar Order", name: "sidebar_order", widget: "number", required: false, value_type: "int" }
+      - { label: "Outline", name: "outline", widget: "hidden", default: "deep" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: Korea Picks
+    name: korea_picks
+    folder: docs/korea-picks
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false }
+      - { label: "Sidebar Order", name: "sidebar_order", widget: "number", required: false, value_type: "int" }
+      - { label: "Outline", name: "outline", widget: "hidden", default: "deep" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: Rankings
+    name: rankings
+    folder: docs/rankings
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false }
+      - { label: "Sidebar Order", name: "sidebar_order", widget: "number", required: false, value_type: "int" }
+      - { label: "Outline", name: "outline", widget: "hidden", default: "deep" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: References
+    name: references
+    folder: docs/references
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false }
+      - { label: "Sidebar Order", name: "sidebar_order", widget: "number", required: false, value_type: "int" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: Categories
+    name: categories
+    folder: docs/categories
+    create: true
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Label", name: "sidebar_label", widget: "string", required: false }
+      - { label: "Sidebar Order", name: "sidebar_order", widget: "number", required: false, value_type: "int" }
+      - { label: "Body", name: "body", widget: "markdown" }

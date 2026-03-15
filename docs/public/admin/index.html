@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Moonworld AI Workbench Admin</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f4f1e8;
+        color: #10201c;
+      }
+
+      .admin-note {
+        padding: 14px 18px;
+        background: #10201c;
+        color: #f4f1e8;
+        font-size: 14px;
+      }
+
+      .admin-note a {
+        color: #f6c453;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="admin-note">
+      로컬 편집은 <code>npm run cms:proxy</code>와 <code>npm run docs:dev</code>로 사용할 수 있다.
+      라이브 GitHub 저장은 별도 OAuth/auth endpoint가 필요하다.
+      운영 문서: <a href="/admin-guide">/admin-guide</a>
+    </div>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </body>
+</html>

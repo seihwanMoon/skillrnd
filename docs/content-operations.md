@@ -125,3 +125,10 @@ npm run content:remove -- --section blog --slug new-post
 - `manufacturing-ai`: use case map
 - `korea-picks`: 한국 법령/공시 MCP 큐레이션
 - `rankings`: 첫 에디터 추천 보드
+
+## 8. Admin 화면
+
+공개 사이트에서는 편집 링크를 숨겼다. 대신 별도 `/admin` 화면을 붙였다.
+
+- 운영 문서: [Admin 운영 가이드](./admin-guide.md)
+- 로컬 편집 테스트: `npm run cms:proxy` + `npm run docs:dev`

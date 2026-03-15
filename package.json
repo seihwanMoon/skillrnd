@@ -7,6 +7,7 @@
     "postinstall": "node scripts/fix-shiki.mjs",
     "content:new": "node scripts/content-manager.mjs new",
     "content:remove": "node scripts/content-manager.mjs remove",
+    "cms:proxy": "npx decap-server",
     "docs:dev": "vitepress dev docs --host 0.0.0.0",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs --host 0.0.0.0"

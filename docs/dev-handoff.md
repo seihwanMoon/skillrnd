@@ -35,6 +35,8 @@ outline: deep
 - 동적 사이드바 도입
 - Markdown 생성/삭제 스크립트 추가
 - 개발/콘텐츠 운영 문서 추가
+- 공개 `이 페이지 편집 제안` 링크 제거
+- `/admin` CMS 화면과 Admin 운영 가이드 추가
 
 ## 1. 현재까지 완료한 작업
 
@@ -89,6 +91,7 @@ outline: deep
 - [docs/index.md](D:/CODE/AICODE/skillrnd/docs/index.md)
 - [docs/development-guide.md](D:/CODE/AICODE/skillrnd/docs/development-guide.md)
 - [docs/content-operations.md](D:/CODE/AICODE/skillrnd/docs/content-operations.md)
+- [docs/admin-guide.md](D:/CODE/AICODE/skillrnd/docs/admin-guide.md)
 - [docs/blog/index.md](D:/CODE/AICODE/skillrnd/docs/blog/index.md)
 - [docs/vibe-coding/index.md](D:/CODE/AICODE/skillrnd/docs/vibe-coding/index.md)
 - [docs/manufacturing-ai/index.md](D:/CODE/AICODE/skillrnd/docs/manufacturing-ai/index.md)
@@ -113,6 +116,7 @@ outline: deep
 - [docs/references/repos.md](D:/CODE/AICODE/skillrnd/docs/references/repos.md)
 - [scripts/fix-shiki.mjs](D:/CODE/AICODE/skillrnd/scripts/fix-shiki.mjs)
 - [scripts/content-manager.mjs](D:/CODE/AICODE/skillrnd/scripts/content-manager.mjs)
+- [docs/public/admin/config.yml](D:/CODE/AICODE/skillrnd/docs/public/admin/config.yml)
 - [deploy.yml](D:/CODE/AICODE/skillrnd/.github/workflows/deploy.yml)
 
 ## 3. 확인된 기술 상태
@@ -162,7 +166,8 @@ outline: deep
 3. `references/repos.md`를 `local`과 `external`로 분리
 4. 각 상위 섹션에 실제 콘텐츠를 2~3개씩 채우기
 5. Korea Picks와 Manufacturing AI 실문서 추가
-6. 비교 페이지 또는 추천 페이지를 새로 추가
+6. `/admin` 라이브 인증 방식 결정
+7. 비교 페이지 또는 추천 페이지를 새로 추가
 
 ## 6. 내일 작업 체크리스트
 
@@ -181,6 +186,9 @@ outline: deep
 - [x] 동적 사이드바 적용
 - [x] Markdown 생성/삭제 기능 추가
 - [x] 개발 운영 문서 작성
+- [x] 공개 편집 링크 제거
+- [x] `/admin` CMS 화면 추가
+- [ ] `/admin` 라이브 인증 방식 결정
 - [ ] 비교 페이지 추가 여부 결정
 
 ## 7. 추천 작업 순서
@@ -235,4 +243,4 @@ git log -1 --oneline
 
 ## 10. 현재 판단
 
-지금 상태는 "기초 인프라 완료, 출판형 섹션 형성, Markdown 운영 자동화 적용" 단계다. 다음 작업은 각 상위 섹션에 실제 글과 큐레이션 보드를 채우고, 비교 전용 페이지를 도입하는 쪽이 가장 효율적이다.
+지금 상태는 "기초 인프라 완료, 출판형 섹션 형성, Markdown 운영 자동화 적용, `/admin` CMS 스캐폴딩 완료" 단계다. 다음 작업은 각 상위 섹션에 실제 글과 큐레이션 보드를 채우고, `/admin`의 라이브 인증 방식을 결정하는 쪽이 가장 효율적이다.
