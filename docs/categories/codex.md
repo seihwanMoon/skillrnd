@@ -20,3 +20,4 @@ title: Codex 카테고리
 - [chatgpt-apps](/skills/chatgpt-apps)
 - [skill-creator](/skills/skill-creator)
 - [skill-installer](/skills/skill-installer)
+- [openai/skills](/skills/openai-skills)

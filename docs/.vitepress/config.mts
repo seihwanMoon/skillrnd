@@ -55,7 +55,11 @@ export default withMermaid(
               { text: 'playwright-interactive', link: '/skills/playwright-interactive' },
               { text: 'chatgpt-apps', link: '/skills/chatgpt-apps' },
               { text: 'skill-creator', link: '/skills/skill-creator' },
-              { text: 'skill-installer', link: '/skills/skill-installer' }
+              { text: 'skill-installer', link: '/skills/skill-installer' },
+              { text: 'openai/skills', link: '/skills/openai-skills' },
+              { text: 'vercel-labs/skills', link: '/skills/vercel-labs-skills' },
+              { text: 'Repomix', link: '/skills/repomix' },
+              { text: 'Gitingest', link: '/skills/gitingest' }
             ]
           }
         ],
@@ -81,6 +85,9 @@ export default withMermaid(
           {
             text: '레퍼런스',
             items: [
+              { text: '허브', link: '/references/index' },
+              { text: '로컬 스킬', link: '/references/local-skills' },
+              { text: '외부 저장소', link: '/references/external-repositories' },
               { text: '저장소 목록', link: '/references/repos' }
             ]
           }

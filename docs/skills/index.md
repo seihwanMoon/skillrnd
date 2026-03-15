@@ -15,14 +15,16 @@ outline: deep
 - [chatgpt-apps](./chatgpt-apps.md)
 - [skill-creator](./skill-creator.md)
 - [skill-installer](./skill-installer.md)
+- [openai/skills](./openai-skills.md)
+- [vercel-labs/skills](./vercel-labs-skills.md)
+- [Repomix](./repomix.md)
+- [Gitingest](./gitingest.md)
 
 ## 다음 후보
 
-- `openai/skills`
-- `vercel-labs/skills`
-- `Repomix`
-- `Gitingest`
 - `RepoAgent`
+- `deepwiki-open`
+- `n-skills`
 
 ## 문서 표준
 
@@ -39,6 +41,8 @@ outline: deep
 ## 오늘 기준 상태
 
 - 로컬 skill 문서: 6개
+- 외부 저장소 문서: 4개
 - 레시피 문서: 2개
 - 카테고리 문서: 4개
-- 다음 목표: 실제 대상 skill 10개 이상으로 확장
+- 총 문서 수: 10개
+- 다음 목표: 비교 페이지와 추천 구조 보강

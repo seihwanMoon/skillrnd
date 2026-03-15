@@ -32,7 +32,7 @@ features:
 - [카테고리 허브](./categories/index.md)
 - [스킬 목록](./skills/index.md)
 - [레시피](./recipes/index.md)
-- [레퍼런스](./references/repos.md)
+- [레퍼런스](./references/index.md)
 
 ## 첫 공개 범위
 

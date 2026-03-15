@@ -22,7 +22,7 @@ title: 레퍼런스 저장소
   - 여러 agent 생태계와의 호환 패턴을 참고하기 좋다
 - [yamadashy/repomix](https://github.com/yamadashy/repomix)
   - 저장소를 AI 입력 친화 형태로 정리하는 접근을 참고하기 좋다
-- [cyclotruc/gitingest](https://github.com/cyclotruc/gitingest)
+- [coderamp-labs/gitingest](https://github.com/coderamp-labs/gitingest)
   - URL 입력 기반 저장소 요약 UX를 참고하기 좋다
 - [OpenBMB/RepoAgent](https://github.com/OpenBMB/RepoAgent)
   - 저장소 문서 생성과 증분 분석 관점을 참고하기 좋다

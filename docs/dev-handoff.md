@@ -16,6 +16,12 @@ outline: deep
   - `skill-installer`
 - `references/repos.md`를 실제 GitHub 레퍼런스 목록으로 확장
 - `skills/index.md`와 카테고리 문서를 현재 상태에 맞게 갱신
+- 외부 저장소 문서 4개 추가
+  - `openai/skills`
+  - `vercel-labs/skills`
+  - `Repomix`
+  - `Gitingest`
+- `references`를 허브, 로컬 스킬, 외부 저장소로 분리 시작
 
 ## 1. 현재까지 완료한 작업
 
@@ -72,10 +78,17 @@ outline: deep
 - [docs/skills/playwright-interactive.md](D:/CODE/AICODE/skillrnd/docs/skills/playwright-interactive.md)
 - [docs/skills/skill-creator.md](D:/CODE/AICODE/skillrnd/docs/skills/skill-creator.md)
 - [docs/skills/skill-installer.md](D:/CODE/AICODE/skillrnd/docs/skills/skill-installer.md)
+- [docs/skills/openai-skills.md](D:/CODE/AICODE/skillrnd/docs/skills/openai-skills.md)
+- [docs/skills/vercel-labs-skills.md](D:/CODE/AICODE/skillrnd/docs/skills/vercel-labs-skills.md)
+- [docs/skills/repomix.md](D:/CODE/AICODE/skillrnd/docs/skills/repomix.md)
+- [docs/skills/gitingest.md](D:/CODE/AICODE/skillrnd/docs/skills/gitingest.md)
 - [docs/categories/index.md](D:/CODE/AICODE/skillrnd/docs/categories/index.md)
 - [docs/recipes/index.md](D:/CODE/AICODE/skillrnd/docs/recipes/index.md)
 - [docs/diagrams/ecosystem-map.md](D:/CODE/AICODE/skillrnd/docs/diagrams/ecosystem-map.md)
 - [docs/dev-handoff.md](D:/CODE/AICODE/skillrnd/docs/dev-handoff.md)
+- [docs/references/index.md](D:/CODE/AICODE/skillrnd/docs/references/index.md)
+- [docs/references/local-skills.md](D:/CODE/AICODE/skillrnd/docs/references/local-skills.md)
+- [docs/references/external-repositories.md](D:/CODE/AICODE/skillrnd/docs/references/external-repositories.md)
 - [docs/references/repos.md](D:/CODE/AICODE/skillrnd/docs/references/repos.md)
 - [scripts/fix-shiki.mjs](D:/CODE/AICODE/skillrnd/scripts/fix-shiki.mjs)
 - [deploy.yml](D:/CODE/AICODE/skillrnd/.github/workflows/deploy.yml)
@@ -134,9 +147,11 @@ outline: deep
 - [x] GitHub Actions 배포 성공 여부 확인
 - [x] 실제 사이트 URL 확인
 - [x] 스킬 선정 기준 문서화
-- [ ] 우선순위 높은 skill 10개 목록 확정
+- [x] 우선순위 높은 skill 10개 목록 확정
 - [ ] 각 skill의 원문 링크 수집
 - [x] 1차 문서 5개 작성
+- [x] `docs/skills/` 문서 10개 도달
+- [x] `references` 분리 시작
 - [ ] 카테고리별 추천 문서 연결
 - [ ] 레시피 문서에 실제 활용 흐름 추가
 
@@ -192,4 +207,4 @@ git log -1 --oneline
 
 ## 10. 현재 판단
 
-지금 상태는 "기초 인프라 완료, 첫 번째 콘텐츠 확장 완료" 단계다. 다음 작업은 구조 변경보다 실제 대상 skill 수를 10개 이상으로 늘리고, 외부 저장소 문서를 어떻게 다룰지 체계를 세우는 쪽이 가장 효율적이다.
+지금 상태는 "기초 인프라 완료, 10개 문서 확보, 레퍼런스 분리 시작" 단계다. 다음 작업은 카테고리별 비교와 추천 구조를 강화하고, 외부 저장소 문서를 별도 섹션으로 완전히 분리할지 결정하는 쪽이 가장 효율적이다.

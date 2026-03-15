@@ -17,4 +17,6 @@ title: 문서화 카테고리
 
 - [repo-intelligence](/skills/repo-intelligence)
 - [skill-creator](/skills/skill-creator)
+- [Repomix](/skills/repomix)
+- [Gitingest](/skills/gitingest)
 - [docs generation recipe](/recipes/docs-generation)
