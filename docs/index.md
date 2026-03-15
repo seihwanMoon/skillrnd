@@ -29,6 +29,7 @@ features:
 
 - [프로젝트 계획서](./project-plan.md)
 - [개발 인수인계 노트](./dev-handoff.md)
+- [사이트 고도화 방향](./site-evolution-plan.md)
 - [카테고리 허브](./categories/index.md)
 - [스킬 목록](./skills/index.md)
 - [레시피](./recipes/index.md)
