@@ -5,7 +5,17 @@ outline: deep
 
 # 개발 인수인계 노트
 
-기준일: `2026-03-14`
+기준일: `2026-03-15`
+
+## 0. 오늘 추가 진행 내용
+
+- GitHub Pages 라이브 URL 확인: [seihwanMoon.github.io/skillrnd](https://seihwanMoon.github.io/skillrnd/)
+- skill 문서 3개 추가
+  - `playwright-interactive`
+  - `skill-creator`
+  - `skill-installer`
+- `references/repos.md`를 실제 GitHub 레퍼런스 목록으로 확장
+- `skills/index.md`와 카테고리 문서를 현재 상태에 맞게 갱신
 
 ## 1. 현재까지 완료한 작업
 
@@ -38,11 +48,12 @@ outline: deep
 - 생태계 Mermaid 다이어그램 1개
 - GitHub Pages 배포 워크플로우
 
-### 1.4 GitHub 저장소 연결
+### 1.4 GitHub 저장소 연결 및 배포
 
 - 원격 저장소: [seihwanMoon/skillrnd](https://github.com/seihwanMoon/skillrnd)
 - 기본 브랜치: `main`
 - 초기 커밋 푸시 완료
+- 라이브 사이트 확인 완료: [seihwanMoon.github.io/skillrnd](https://seihwanMoon.github.io/skillrnd/)
 
 최신 커밋:
 
@@ -58,10 +69,14 @@ outline: deep
 - [docs/.vitepress/config.mts](D:/CODE/AICODE/skillrnd/docs/.vitepress/config.mts)
 - [docs/index.md](D:/CODE/AICODE/skillrnd/docs/index.md)
 - [docs/skills/index.md](D:/CODE/AICODE/skillrnd/docs/skills/index.md)
+- [docs/skills/playwright-interactive.md](D:/CODE/AICODE/skillrnd/docs/skills/playwright-interactive.md)
+- [docs/skills/skill-creator.md](D:/CODE/AICODE/skillrnd/docs/skills/skill-creator.md)
+- [docs/skills/skill-installer.md](D:/CODE/AICODE/skillrnd/docs/skills/skill-installer.md)
 - [docs/categories/index.md](D:/CODE/AICODE/skillrnd/docs/categories/index.md)
 - [docs/recipes/index.md](D:/CODE/AICODE/skillrnd/docs/recipes/index.md)
 - [docs/diagrams/ecosystem-map.md](D:/CODE/AICODE/skillrnd/docs/diagrams/ecosystem-map.md)
 - [docs/dev-handoff.md](D:/CODE/AICODE/skillrnd/docs/dev-handoff.md)
+- [docs/references/repos.md](D:/CODE/AICODE/skillrnd/docs/references/repos.md)
 - [scripts/fix-shiki.mjs](D:/CODE/AICODE/skillrnd/scripts/fix-shiki.mjs)
 - [deploy.yml](D:/CODE/AICODE/skillrnd/.github/workflows/deploy.yml)
 
@@ -75,7 +90,8 @@ outline: deep
 ### 3.2 배포 상태
 
 - GitHub Actions 배포 워크플로우 추가 완료
-- 저장소에서 `Settings > Pages > Build and deployment`가 `GitHub Actions`인지 확인 필요
+- 라이브 사이트 접근 확인 완료
+- 이후에는 배포 실패 여부만 주기적으로 보면 된다
 
 ### 3.3 현재 의존성 조합
 
@@ -106,21 +122,21 @@ outline: deep
 
 우선순위 순서:
 
-1. GitHub Pages 배포 상태 확인
-2. 실제 분석 대상 skill 후보 10개 선정
-3. `docs/skills/` 문서 10개 수준으로 확장
-4. `references/repos.md`에 실제 GitHub 링크 정리
-5. 카테고리 페이지에 비교 기준 보강
-6. 홈 페이지 문구와 첫인상 개선
+1. 실제 분석 대상 skill 후보 10개를 문서 기준으로 확정
+2. `docs/skills/` 문서를 10개 이상으로 확장
+3. `references/repos.md`를 `local`과 `external`로 분리
+4. 카테고리 페이지에 비교 기준과 추천 섹션 보강
+5. 홈 페이지 문구와 첫인상 개선
+6. recipe 문서를 실제 워크플로우 중심으로 확장
 
 ## 6. 내일 작업 체크리스트
 
-- [ ] GitHub Actions 배포 성공 여부 확인
-- [ ] 실제 사이트 URL 확인
-- [ ] 스킬 선정 기준 문서화
+- [x] GitHub Actions 배포 성공 여부 확인
+- [x] 실제 사이트 URL 확인
+- [x] 스킬 선정 기준 문서화
 - [ ] 우선순위 높은 skill 10개 목록 확정
 - [ ] 각 skill의 원문 링크 수집
-- [ ] 1차 문서 5개 작성
+- [x] 1차 문서 5개 작성
 - [ ] 카테고리별 추천 문서 연결
 - [ ] 레시피 문서에 실제 활용 흐름 추가
 
@@ -176,4 +192,4 @@ git log -1 --oneline
 
 ## 10. 현재 판단
 
-지금 상태는 "기초 인프라 완료, 콘텐츠 확장 전 단계"다. 내일은 구조를 바꾸기보다 실제 skill 문서 데이터를 채우는 쪽이 가장 효율적이다.
+지금 상태는 "기초 인프라 완료, 첫 번째 콘텐츠 확장 완료" 단계다. 다음 작업은 구조 변경보다 실제 대상 skill 수를 10개 이상으로 늘리고, 외부 저장소 문서를 어떻게 다룰지 체계를 세우는 쪽이 가장 효율적이다.

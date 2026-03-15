@@ -9,4 +9,4 @@ title: 테스트 카테고리
 ## 대표 문서
 
 - [playwright](/skills/playwright)
-
+- [playwright-interactive](/skills/playwright-interactive)

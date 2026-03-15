@@ -16,5 +16,7 @@ title: Codex 카테고리
 
 - [repo-intelligence](/skills/repo-intelligence)
 - [playwright](/skills/playwright)
+- [playwright-interactive](/skills/playwright-interactive)
 - [chatgpt-apps](/skills/chatgpt-apps)
-
+- [skill-creator](/skills/skill-creator)
+- [skill-installer](/skills/skill-installer)

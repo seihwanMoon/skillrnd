@@ -16,5 +16,5 @@ title: 문서화 카테고리
 ## 대표 문서
 
 - [repo-intelligence](/skills/repo-intelligence)
+- [skill-creator](/skills/skill-creator)
 - [docs generation recipe](/recipes/docs-generation)
-

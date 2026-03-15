@@ -11,7 +11,18 @@ outline: deep
 
 - [repo-intelligence](./repo-intelligence.md)
 - [playwright](./playwright.md)
+- [playwright-interactive](./playwright-interactive.md)
 - [chatgpt-apps](./chatgpt-apps.md)
+- [skill-creator](./skill-creator.md)
+- [skill-installer](./skill-installer.md)
+
+## 다음 후보
+
+- `openai/skills`
+- `vercel-labs/skills`
+- `Repomix`
+- `Gitingest`
+- `RepoAgent`
 
 ## 문서 표준
 
@@ -25,3 +36,9 @@ outline: deep
 - 장점과 한계
 - 원문 링크
 
+## 오늘 기준 상태
+
+- 로컬 skill 문서: 6개
+- 레시피 문서: 2개
+- 카테고리 문서: 4개
+- 다음 목표: 실제 대상 skill 10개 이상으로 확장

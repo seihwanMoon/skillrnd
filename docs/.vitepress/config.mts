@@ -52,7 +52,10 @@ export default withMermaid(
               { text: '목록', link: '/skills/index' },
               { text: 'repo-intelligence', link: '/skills/repo-intelligence' },
               { text: 'playwright', link: '/skills/playwright' },
-              { text: 'chatgpt-apps', link: '/skills/chatgpt-apps' }
+              { text: 'playwright-interactive', link: '/skills/playwright-interactive' },
+              { text: 'chatgpt-apps', link: '/skills/chatgpt-apps' },
+              { text: 'skill-creator', link: '/skills/skill-creator' },
+              { text: 'skill-installer', link: '/skills/skill-installer' }
             ]
           }
         ],
