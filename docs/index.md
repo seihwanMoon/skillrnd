@@ -37,6 +37,7 @@ features:
 - [콘텐츠 운영 가이드](./content-operations.md)
 - [Admin 운영 가이드](./admin-guide.md)
 - [블로그](./blog/index.md)
+- [GitHub Study](./githubstudy/index.md)
 - [카테고리 허브](./categories/index.md)
 - [스킬 목록](./skills/index.md)
 - [Vibe Coding](./vibe-coding/index.md)

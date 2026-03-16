@@ -109,6 +109,7 @@ export default withMermaid(
       nav: [
         { text: '홈', link: '/' },
         { text: '블로그', link: '/blog/index' },
+        { text: 'GitHub Study', link: '/githubstudy/index' },
         { text: '제조 AI', link: '/manufacturing-ai/index' },
         { text: 'Vibe Coding', link: '/vibe-coding/index' },
         {
@@ -125,6 +126,10 @@ export default withMermaid(
         {
           text: '블로그',
           items: buildSidebarItems('blog')
+        },
+        {
+          text: 'GitHub Study',
+          items: buildSidebarItems('githubstudy')
         },
         {
           text: '제조 AI',
