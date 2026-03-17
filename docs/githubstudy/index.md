@@ -17,12 +17,12 @@ sidebar_order: -1000
 
 - [Methodology](./methodology.md)
 - [Archive](./archive.md)
-- 생성 문서 수: 3
+- 생성 문서 수: 4
 
 <div class="poket-stat-grid">
 <div class="poket-stat-card poket-stat-card-strong">
   <div class="poket-stat-label">Generated Entries</div>
-  <div class="poket-stat-value">3</div>
+  <div class="poket-stat-value">4</div>
 </div>
 <div class="poket-stat-card poket-stat-card-calm">
   <div class="poket-stat-label">Categories</div>
@@ -30,7 +30,7 @@ sidebar_order: -1000
 </div>
 <div class="poket-stat-card poket-stat-card-warm">
   <div class="poket-stat-label">Tags</div>
-  <div class="poket-stat-value">7</div>
+  <div class="poket-stat-value">8</div>
 </div>
 <div class="poket-stat-card poket-stat-card-calm">
   <div class="poket-stat-label">No Change</div>
@@ -45,7 +45,7 @@ sidebar_order: -1000
 ## 찾아보기
 
 <GitHubStudyExplorer
-  items-json='[{"title": "Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스", "source_title": "or", "category": "github", "date": "2026-03-17", "link": "./generated/langchain-ai-deepagents/", "preview": "Deep Agents는 프롬프트, 도구, 컨텍스트 처리를 처음부터 손으로 엮지 않아도 바로 동작하는 에이전트를 제공하는 &apos;batteries-included&apos; 스타일의 프로젝트다.", "keywords": ["Agent Harness", "Planning", "Filesystem/Shell", "Sub-agents", "LangGraph"], "tags": ["agents"], "badges": [{"label": "Exporting", "tone": "neutral"}, {"label": "Codex", "tone": "neutral"}]}, {"title": "GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제", "source_title": "Analyze a GitHub repository", "category": "github", "date": "2026-03-17", "link": "./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/", "preview": "저장소의 파일을 수집한 뒤 코드베이스의 핵심 abstraction을 뽑아내고, 관계와 학습 순서를 정리해 사람이 읽기 쉬운 튜토리얼로 변환한다.", "keywords": ["Pocket Flow", "GitHub 저장소 분석", "Workflow 파이프라인", "BatchNode", "LLM 튜토리얼 생성"], "tags": ["github", "repo", "tutorial", "pocketflow"], "badges": [{"label": "Recent", "tone": "info"}, {"label": "Published", "tone": "success"}, {"label": "Codex", "tone": "neutral"}]}, {"title": "Example Domain 한국어 해설", "source_title": "Example Domain", "category": "docs", "date": "2026-03-17", "link": "./generated/example/", "preview": "`Example Domain`의 핵심 주제를 빠르게 이해할 수 있도록 큰 그림 중심으로 정리한 문서다.", "keywords": ["GitHub", "Korean Summary", "Workflow", "Mermaid", "Practical Guide"], "tags": ["demo", "sample"], "badges": [{"label": "Recent", "tone": "info"}, {"label": "Published", "tone": "success"}, {"label": "Mock", "tone": "neutral"}]}]'
+  items-json='[{"title": "Claude Code 플러그인 디렉터리", "source_title": "Claude Code Plugins Directory", "category": "github", "date": "2026-03-17", "link": "./generated/anthropics-claude-plugins-official/", "preview": "Claude Code Plugins Directory는 Claude Code용 플러그인을 모아둔 큐레이션 마켓플레이스 성격의 저장소다.", "keywords": ["Claude Code", "Plugin Marketplace", "Internal Plugins", "External Plugins", "MCP"], "tags": ["claude"], "badges": [{"label": "Exporting", "tone": "neutral"}, {"label": "Codex", "tone": "neutral"}]}, {"title": "Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스", "source_title": "or", "category": "github", "date": "2026-03-17", "link": "./generated/langchain-ai-deepagents/", "preview": "Deep Agents는 프롬프트, 도구, 컨텍스트 처리를 처음부터 손으로 엮지 않아도 바로 동작하는 에이전트를 제공하는 &apos;batteries-included&apos; 스타일의 프로젝트다.", "keywords": ["Agent Harness", "Planning", "Filesystem/Shell", "Sub-agents", "LangGraph"], "tags": ["agents"], "badges": [{"label": "Recent", "tone": "info"}, {"label": "Published", "tone": "success"}, {"label": "Codex", "tone": "neutral"}]}, {"title": "GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제", "source_title": "Analyze a GitHub repository", "category": "github", "date": "2026-03-17", "link": "./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/", "preview": "저장소의 파일을 수집한 뒤 코드베이스의 핵심 abstraction을 뽑아내고, 관계와 학습 순서를 정리해 사람이 읽기 쉬운 튜토리얼로 변환한다.", "keywords": ["Pocket Flow", "GitHub 저장소 분석", "Workflow 파이프라인", "BatchNode", "LLM 튜토리얼 생성"], "tags": ["github", "repo", "tutorial", "pocketflow"], "badges": [{"label": "Recent", "tone": "info"}, {"label": "Published", "tone": "success"}, {"label": "Codex", "tone": "neutral"}]}, {"title": "Example Domain 한국어 해설", "source_title": "Example Domain", "category": "docs", "date": "2026-03-17", "link": "./generated/example/", "preview": "`Example Domain`의 핵심 주제를 빠르게 이해할 수 있도록 큰 그림 중심으로 정리한 문서다.", "keywords": ["GitHub", "Korean Summary", "Workflow", "Mermaid", "Practical Guide"], "tags": ["demo", "sample"], "badges": [{"label": "Recent", "tone": "info"}, {"label": "Published", "tone": "success"}, {"label": "Mock", "tone": "neutral"}]}]'
 />
 
 ## 최신 문서
@@ -53,10 +53,19 @@ sidebar_order: -1000
 <div class="poket-entry-grid">
 <article class="poket-entry-card">
   <div class="poket-entry-card-top"><span class="poket-entry-category">github</span><span class="poket-entry-date">2026-03-17</span></div>
+  <h3 class="poket-entry-title"><a href="./generated/anthropics-claude-plugins-official/">Claude Code 플러그인 디렉터리</a></h3>
+  <p class="poket-entry-source">Claude Code Plugins Directory</p>
+  <p class="poket-entry-preview">Claude Code Plugins Directory는 Claude Code용 플러그인을 모아둔 큐레이션 마켓플레이스 성격의 저장소다.</p>
+  <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-neutral">Exporting</span><span class="poket-status-badge poket-status-badge-neutral">Codex</span></div>
+  <div class="poket-tag-pills"><span class="poket-tag-pill">Claude Code</span><span class="poket-tag-pill">Plugin Marketplace</span><span class="poket-tag-pill">Internal Plugins</span><span class="poket-tag-pill">External Plugins</span></div>
+  <div class="poket-entry-actions"><a href="./generated/anthropics-claude-plugins-official/">문서 보기</a></div>
+</article>
+<article class="poket-entry-card">
+  <div class="poket-entry-card-top"><span class="poket-entry-category">github</span><span class="poket-entry-date">2026-03-17</span></div>
   <h3 class="poket-entry-title"><a href="./generated/langchain-ai-deepagents/">Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스</a></h3>
   <p class="poket-entry-source">or</p>
   <p class="poket-entry-preview">Deep Agents는 프롬프트, 도구, 컨텍스트 처리를 처음부터 손으로 엮지 않아도 바로 동작하는 에이전트를 제공하는 'batteries-included' 스타일의 프로젝트다.</p>
-  <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-neutral">Exporting</span><span class="poket-status-badge poket-status-badge-neutral">Codex</span></div>
+  <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-info">Recent</span><span class="poket-status-badge poket-status-badge-success">Published</span><span class="poket-status-badge poket-status-badge-neutral">Codex</span></div>
   <div class="poket-tag-pills"><span class="poket-tag-pill">Agent Harness</span><span class="poket-tag-pill">Planning</span><span class="poket-tag-pill">Filesystem/Shell</span><span class="poket-tag-pill">Sub-agents</span></div>
   <div class="poket-entry-actions"><a href="./generated/langchain-ai-deepagents/">문서 보기</a></div>
 </article>
@@ -82,6 +91,7 @@ sidebar_order: -1000
 
 ## 빠른 링크
 
+- [Claude Code 플러그인 디렉터리](./generated/anthropics-claude-plugins-official/)
 - [Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스](./generated/langchain-ai-deepagents/)
 - [GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제](./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/)
 - [Example Domain 한국어 해설](./generated/example/)
@@ -98,8 +108,12 @@ sidebar_order: -1000
   </div>
 </details>
 <details class="poket-group-detail">
-  <summary class="poket-group-summary">github<span class="poket-group-count">2</span></summary>
+  <summary class="poket-group-summary">github<span class="poket-group-count">3</span></summary>
   <div class="poket-group-list">
+<div class="poket-group-item">
+  <a class="poket-group-link" href="./generated/anthropics-claude-plugins-official/">Claude Code 플러그인 디렉터리</a>
+  <div class="poket-group-sub">Claude Code Plugins Directory · 2026-03-17</div>
+</div>
 <div class="poket-group-item">
   <a class="poket-group-link" href="./generated/langchain-ai-deepagents/">Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스</a>
   <div class="poket-group-sub">or · 2026-03-17</div>
@@ -119,6 +133,15 @@ sidebar_order: -1000
 <div class="poket-group-item">
   <a class="poket-group-link" href="./generated/langchain-ai-deepagents/">Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스</a>
   <div class="poket-group-sub">or · 2026-03-17</div>
+</div>
+  </div>
+</details>
+<details class="poket-group-detail">
+  <summary class="poket-group-summary">claude<span class="poket-group-count">1</span></summary>
+  <div class="poket-group-list">
+<div class="poket-group-item">
+  <a class="poket-group-link" href="./generated/anthropics-claude-plugins-official/">Claude Code 플러그인 디렉터리</a>
+  <div class="poket-group-sub">Claude Code Plugins Directory · 2026-03-17</div>
 </div>
   </div>
 </details>

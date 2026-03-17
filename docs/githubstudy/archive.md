@@ -13,10 +13,18 @@ sidebar_order: -800
 <div class="poket-archive-list">
 <article class="poket-archive-item">
   <div class="poket-archive-top"><span class="poket-entry-category">github</span><span class="poket-archive-date">2026-03-17</span></div>
+  <h3 class="poket-entry-title"><a href="./generated/anthropics-claude-plugins-official/">Claude Code 플러그인 디렉터리</a></h3>
+  <p class="poket-entry-source">Claude Code Plugins Directory</p>
+  <p class="poket-entry-preview">Claude Code Plugins Directory는 Claude Code용 플러그인을 모아둔 큐레이션 마켓플레이스 성격의 저장소다.</p>
+  <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-neutral">Exporting</span><span class="poket-status-badge poket-status-badge-neutral">Codex</span></div>
+  <div class="poket-tag-pills"><span class="poket-tag-pill">Claude Code</span><span class="poket-tag-pill">Plugin Marketplace</span><span class="poket-tag-pill">Internal Plugins</span><span class="poket-tag-pill">External Plugins</span><span class="poket-tag-pill">MCP</span></div>
+</article>
+<article class="poket-archive-item">
+  <div class="poket-archive-top"><span class="poket-entry-category">github</span><span class="poket-archive-date">2026-03-17</span></div>
   <h3 class="poket-entry-title"><a href="./generated/langchain-ai-deepagents/">Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스</a></h3>
   <p class="poket-entry-source">or</p>
   <p class="poket-entry-preview">Deep Agents는 프롬프트, 도구, 컨텍스트 처리를 처음부터 손으로 엮지 않아도 바로 동작하는 에이전트를 제공하는 'batteries-included' 스타일의 프로젝트다.</p>
-  <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-neutral">Exporting</span><span class="poket-status-badge poket-status-badge-neutral">Codex</span></div>
+  <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-info">Recent</span><span class="poket-status-badge poket-status-badge-success">Published</span><span class="poket-status-badge poket-status-badge-neutral">Codex</span></div>
   <div class="poket-tag-pills"><span class="poket-tag-pill">Agent Harness</span><span class="poket-tag-pill">Planning</span><span class="poket-tag-pill">Filesystem/Shell</span><span class="poket-tag-pill">Sub-agents</span><span class="poket-tag-pill">LangGraph</span></div>
 </article>
 <article class="poket-archive-item">
@@ -49,8 +57,12 @@ sidebar_order: -800
   </div>
 </details>
 <details class="poket-group-detail">
-  <summary class="poket-group-summary">github<span class="poket-group-count">2</span></summary>
+  <summary class="poket-group-summary">github<span class="poket-group-count">3</span></summary>
   <div class="poket-group-list">
+<div class="poket-group-item">
+  <a class="poket-group-link" href="./generated/anthropics-claude-plugins-official/">Claude Code 플러그인 디렉터리</a>
+  <div class="poket-group-sub">Claude Code Plugins Directory · 2026-03-17</div>
+</div>
 <div class="poket-group-item">
   <a class="poket-group-link" href="./generated/langchain-ai-deepagents/">Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스</a>
   <div class="poket-group-sub">or · 2026-03-17</div>
