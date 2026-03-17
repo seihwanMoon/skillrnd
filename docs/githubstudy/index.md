@@ -34,6 +34,12 @@ sidebar_order: -1000
 </div>
 </div>
 
+## 찾아보기
+
+<GitHubStudyExplorer
+  items-json='[{"title": "GitHub 저장소를 초보자용 튜토리얼로 바꾸는 PocketFlow 프로젝트", "source_title": "Analyze a GitHub repository", "category": "github", "date": "2026-03-17", "link": "./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/", "preview": "이 프로젝트는 코드베이스 전체를 훑어 핵심 추상화와 상호작용을 찾아낸 뒤, 입문자도 이해할 수 있는 튜토리얼 형태로 재구성한다.", "keywords": ["PocketFlow", "코드베이스 분석", "튜토리얼 자동 생성", "Workflow", "Mermaid 다이어그램"], "tags": ["github", "repo", "tutorial", "pocketflow"]}, {"title": "Example Domain 한국어 해설", "source_title": "Example Domain", "category": "docs", "date": "2026-03-17", "link": "./generated/example/", "preview": "이 자료는 `Example Domain` 주제를 다루는 영문 기술 문서다.", "keywords": ["GitHub", "한국어 해설", "요약 정리", "원문 링크", "실무 관점"], "tags": ["demo", "sample"]}]'
+/>
+
 ## 최신 문서
 
 <div class="poket-entry-grid">
