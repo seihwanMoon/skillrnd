@@ -10,6 +10,7 @@ type ExplorerItem = {
   preview: string
   keywords: string[]
   tags: string[]
+  badges: Array<{ label: string; tone: string }>
 }
 
 const props = defineProps<{
@@ -106,6 +107,16 @@ function selectCategory(category: string) {
         </h3>
         <p class="poket-entry-source">{{ item.source_title }}</p>
         <p class="poket-entry-preview">{{ item.preview }}</p>
+        <div v-if="item.badges.length" class="poket-badge-row">
+          <span
+            v-for="badge in item.badges"
+            :key="`${item.link}-${badge.label}`"
+            class="poket-status-badge"
+            :class="`poket-status-badge-${badge.tone}`"
+          >
+            {{ badge.label }}
+          </span>
+        </div>
         <div class="poket-tag-pills">
           <span
             v-for="keyword in item.keywords.slice(0, 4)"
