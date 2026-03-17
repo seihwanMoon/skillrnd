@@ -658,6 +658,71 @@
   margin: 1rem 0 1.75rem;
 }
 
+.poket-archive-browser {
+  margin: 1rem 0 1.75rem;
+}
+
+.poket-archive-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.9rem;
+}
+
+.poket-view-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.24rem;
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.poket-view-toggle-button {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--vp-c-text-2);
+  padding: 0.4rem 0.78rem;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.poket-view-toggle-button.is-active {
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.14), rgba(245, 158, 11, 0.14));
+  color: #0f766e;
+}
+
+.poket-archive-list.is-compact {
+  gap: 0.8rem;
+}
+
+.poket-archive-list.is-compact .poket-archive-item {
+  padding: 0.8rem 0.85rem 0.82rem;
+}
+
+.poket-archive-list.is-compact .poket-entry-preview {
+  -webkit-line-clamp: 1;
+}
+
+.poket-archive-list.is-compact .poket-tag-pills {
+  display: none;
+}
+
+.poket-archive-list.is-expanded .poket-archive-item {
+  padding: 1rem 1rem 1rem;
+}
+
+.poket-archive-list.is-expanded .poket-entry-preview {
+  -webkit-line-clamp: 4;
+}
+
 .poket-archive-item {
   border: 1px solid rgba(15, 118, 110, 0.14);
   border-radius: 20px;

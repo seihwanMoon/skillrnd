@@ -10,40 +10,10 @@ sidebar_order: -800
 
 ## 전체 문서
 
-<div class="poket-archive-list">
-<article class="poket-archive-item">
-  <div class="poket-archive-top"><span class="poket-entry-category">github</span><span class="poket-archive-date">2026-03-17</span></div>
-  <h3 class="poket-entry-title"><a href="./generated/langchain-ai-deepagents/">Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스</a></h3>
-  <p class="poket-entry-source">The batteries-included agent harness.</p>
-  <p class="poket-entry-preview">Deep Agents는 프롬프트, 도구, 컨텍스트 처리를 처음부터 손으로 엮지 않아도 바로 동작하는 에이전트를 제공하는 'batteries-included' 스타일의 프로젝트다.</p>
-  <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-info">Recent</span><span class="poket-status-badge poket-status-badge-success">Published</span><span class="poket-status-badge poket-status-badge-neutral">Codex</span></div>
-  <div class="poket-tag-pills"><span class="poket-tag-pill">Agent Harness</span><span class="poket-tag-pill">Planning</span><span class="poket-tag-pill">Filesystem/Shell</span></div>
-</article>
-<article class="poket-archive-item">
-  <div class="poket-archive-top"><span class="poket-entry-category">github</span><span class="poket-archive-date">2026-03-17</span></div>
-  <h3 class="poket-entry-title"><a href="./generated/anthropics-claude-plugins-official/">Claude Code 플러그인 디렉터리</a></h3>
-  <p class="poket-entry-source">Claude Code Plugins Directory</p>
-  <p class="poket-entry-preview">Claude Code Plugins Directory는 Claude Code용 플러그인을 모아둔 큐레이션 마켓플레이스 성격의 저장소다.</p>
-  <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-info">Recent</span><span class="poket-status-badge poket-status-badge-success">Published</span><span class="poket-status-badge poket-status-badge-neutral">Codex</span></div>
-  <div class="poket-tag-pills"><span class="poket-tag-pill">Claude Code</span><span class="poket-tag-pill">Plugin Marketplace</span><span class="poket-tag-pill">Internal Plugins</span></div>
-</article>
-<article class="poket-archive-item">
-  <div class="poket-archive-top"><span class="poket-entry-category">github</span><span class="poket-archive-date">2026-03-17</span></div>
-  <h3 class="poket-entry-title"><a href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제</a></h3>
-  <p class="poket-entry-source">Analyze a GitHub repository</p>
-  <p class="poket-entry-preview">저장소의 파일을 수집한 뒤 코드베이스의 핵심 abstraction을 뽑아내고, 관계와 학습 순서를 정리해 사람이 읽기 쉬운 튜토리얼로 변환한다.</p>
-  <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-info">Recent</span><span class="poket-status-badge poket-status-badge-success">Published</span><span class="poket-status-badge poket-status-badge-neutral">Codex</span></div>
-  <div class="poket-tag-pills"><span class="poket-tag-pill">Pocket Flow</span><span class="poket-tag-pill">GitHub 저장소 분석</span><span class="poket-tag-pill">Workflow 파이프라인</span></div>
-</article>
-<article class="poket-archive-item">
-  <div class="poket-archive-top"><span class="poket-entry-category">docs</span><span class="poket-archive-date">2026-03-17</span></div>
-  <h3 class="poket-entry-title"><a href="./generated/example/">Example Domain 한국어 해설</a></h3>
-  <p class="poket-entry-source">Example Domain</p>
-  <p class="poket-entry-preview">`Example Domain`의 핵심 주제를 빠르게 이해할 수 있도록 큰 그림 중심으로 정리한 문서다.</p>
-  <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-info">Recent</span><span class="poket-status-badge poket-status-badge-success">Published</span><span class="poket-status-badge poket-status-badge-neutral">Mock</span></div>
-  <div class="poket-tag-pills"><span class="poket-tag-pill">GitHub</span><span class="poket-tag-pill">Korean Summary</span><span class="poket-tag-pill">Workflow</span></div>
-</article>
-</div>
+<GitHubStudyArchive
+  items-json='[{"title": "Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스", "source_title": "The batteries-included agent harness.", "category": "github", "date": "2026-03-17", "link": "./generated/langchain-ai-deepagents/", "preview": "Deep Agents는 프롬프트, 도구, 컨텍스트 처리를 처음부터 손으로 엮지 않아도 바로 동작하는 에이전트를 제공하는 &apos;batteries-included&apos; 스타일의 프로젝트다.", "keywords": ["Agent Harness", "Planning", "Filesystem/Shell", "Sub-agents", "LangGraph"], "tags": ["agents"], "badges": [{"label": "Recent", "tone": "info"}, {"label": "Published", "tone": "success"}, {"label": "Codex", "tone": "neutral"}]}, {"title": "Claude Code 플러그인 디렉터리", "source_title": "Claude Code Plugins Directory", "category": "github", "date": "2026-03-17", "link": "./generated/anthropics-claude-plugins-official/", "preview": "Claude Code Plugins Directory는 Claude Code용 플러그인을 모아둔 큐레이션 마켓플레이스 성격의 저장소다.", "keywords": ["Claude Code", "Plugin Marketplace", "Internal Plugins", "External Plugins", "MCP"], "tags": ["claude"], "badges": [{"label": "Recent", "tone": "info"}, {"label": "Published", "tone": "success"}, {"label": "Codex", "tone": "neutral"}]}, {"title": "GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제", "source_title": "Analyze a GitHub repository", "category": "github", "date": "2026-03-17", "link": "./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/", "preview": "저장소의 파일을 수집한 뒤 코드베이스의 핵심 abstraction을 뽑아내고, 관계와 학습 순서를 정리해 사람이 읽기 쉬운 튜토리얼로 변환한다.", "keywords": ["Pocket Flow", "GitHub 저장소 분석", "Workflow 파이프라인", "BatchNode", "LLM 튜토리얼 생성"], "tags": ["github", "repo", "tutorial", "pocketflow"], "badges": [{"label": "Recent", "tone": "info"}, {"label": "Published", "tone": "success"}, {"label": "Codex", "tone": "neutral"}]}, {"title": "Example Domain 한국어 해설", "source_title": "Example Domain", "category": "docs", "date": "2026-03-17", "link": "./generated/example/", "preview": "`Example Domain`의 핵심 주제를 빠르게 이해할 수 있도록 큰 그림 중심으로 정리한 문서다.", "keywords": ["GitHub", "Korean Summary", "Workflow", "Mermaid", "Practical Guide"], "tags": ["demo", "sample"], "badges": [{"label": "Recent", "tone": "info"}, {"label": "Published", "tone": "success"}, {"label": "Mock", "tone": "neutral"}]}]'
+/>
+
 
 ## 카테고리별 보기
 
