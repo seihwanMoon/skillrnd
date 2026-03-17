@@ -1,0 +1,25 @@
+{
+  "id": "langchain-ai-deepagents",
+  "title": "Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스",
+  "one_liner": "Deep Agents는 계획 수립, 파일 작업, 셸 실행, 서브에이전트, 문맥 관리를 기본으로 갖춘 오픈소스 AI 에이전트 실행 프레임워크다.",
+  "summary_preview": "Deep Agents는 프롬프트, 도구, 컨텍스트 처리를 처음부터 손으로 엮지 않아도 바로 동작하는 에이전트를 제공하는 'batteries-included' 스타일의 프로젝트다.",
+  "source_title": "or",
+  "source_url": "https://github.com/langchain-ai/deepagents",
+  "category": "github",
+  "keywords": [
+    "Agent Harness",
+    "Planning",
+    "Filesystem/Shell",
+    "Sub-agents",
+    "LangGraph"
+  ],
+  "tags": [
+    "agents"
+  ],
+  "generated_at": "2026-03-17T05:42:26+00:00",
+  "entry_path": "generated/langchain-ai-deepagents/index.md",
+  "local_entry_path": "entries/langchain-ai-deepagents/index.md",
+  "source_path": "generated/langchain-ai-deepagents/source.md",
+  "published_at": "2026-03-17T05:42:26+00:00",
+  "docs_section": "githubstudy"
+}

@@ -13,10 +13,18 @@ sidebar_order: -800
 <div class="poket-archive-list">
 <article class="poket-archive-item">
   <div class="poket-archive-top"><span class="poket-entry-category">github</span><span class="poket-archive-date">2026-03-17</span></div>
+  <h3 class="poket-entry-title"><a href="./generated/langchain-ai-deepagents/">Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스</a></h3>
+  <p class="poket-entry-source">or</p>
+  <p class="poket-entry-preview">Deep Agents는 프롬프트, 도구, 컨텍스트 처리를 처음부터 손으로 엮지 않아도 바로 동작하는 에이전트를 제공하는 'batteries-included' 스타일의 프로젝트다.</p>
+  <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-neutral">Exporting</span><span class="poket-status-badge poket-status-badge-neutral">Codex</span></div>
+  <div class="poket-tag-pills"><span class="poket-tag-pill">Agent Harness</span><span class="poket-tag-pill">Planning</span><span class="poket-tag-pill">Filesystem/Shell</span><span class="poket-tag-pill">Sub-agents</span><span class="poket-tag-pill">LangGraph</span></div>
+</article>
+<article class="poket-archive-item">
+  <div class="poket-archive-top"><span class="poket-entry-category">github</span><span class="poket-archive-date">2026-03-17</span></div>
   <h3 class="poket-entry-title"><a href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제</a></h3>
   <p class="poket-entry-source">Analyze a GitHub repository</p>
   <p class="poket-entry-preview">저장소의 파일을 수집한 뒤 코드베이스의 핵심 abstraction을 뽑아내고, 관계와 학습 순서를 정리해 사람이 읽기 쉬운 튜토리얼로 변환한다.</p>
-  <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-info">Recent</span><span class="poket-status-badge poket-status-badge-neutral">Exporting</span><span class="poket-status-badge poket-status-badge-neutral">Codex</span></div>
+  <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-info">Recent</span><span class="poket-status-badge poket-status-badge-success">Published</span><span class="poket-status-badge poket-status-badge-neutral">Codex</span></div>
   <div class="poket-tag-pills"><span class="poket-tag-pill">Pocket Flow</span><span class="poket-tag-pill">GitHub 저장소 분석</span><span class="poket-tag-pill">Workflow 파이프라인</span><span class="poket-tag-pill">BatchNode</span><span class="poket-tag-pill">LLM 튜토리얼 생성</span></div>
 </article>
 <article class="poket-archive-item">
@@ -41,8 +49,12 @@ sidebar_order: -800
   </div>
 </details>
 <details class="poket-group-detail">
-  <summary class="poket-group-summary">github<span class="poket-group-count">1</span></summary>
+  <summary class="poket-group-summary">github<span class="poket-group-count">2</span></summary>
   <div class="poket-group-list">
+<div class="poket-group-item">
+  <a class="poket-group-link" href="./generated/langchain-ai-deepagents/">Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스</a>
+  <div class="poket-group-sub">or · 2026-03-17</div>
+</div>
 <div class="poket-group-item">
   <a class="poket-group-link" href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제</a>
   <div class="poket-group-sub">Analyze a GitHub repository · 2026-03-17</div>
