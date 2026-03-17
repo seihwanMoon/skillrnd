@@ -39,17 +39,17 @@ sidebar_order: -1000
 <div class="poket-entry-grid">
 <article class="poket-entry-card">
   <div class="poket-entry-card-top"><span class="poket-entry-category">github</span></div>
-  <h3 class="poket-entry-title"><a href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/index.md">GitHub 저장소를 입문용 튜토리얼로 바꾸는 PocketFlow 예제</a></h3>
+  <h3 class="poket-entry-title"><a href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 입문용 튜토리얼로 바꾸는 PocketFlow 예제</a></h3>
   <p class="poket-entry-source">Analyze a GitHub repository</p>
   <div class="poket-tag-pills"><span class="poket-tag-pill">github</span><span class="poket-tag-pill">repo</span><span class="poket-tag-pill">tutorial</span><span class="poket-tag-pill">pocketflow</span></div>
-  <div class="poket-entry-actions"><a href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/index.md">문서 보기</a></div>
+  <div class="poket-entry-actions"><a href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">문서 보기</a></div>
 </article>
 <article class="poket-entry-card">
   <div class="poket-entry-card-top"><span class="poket-entry-category">docs</span></div>
-  <h3 class="poket-entry-title"><a href="./generated/example/index.md">Example Domain 문서용 예시 도메인 안내</a></h3>
+  <h3 class="poket-entry-title"><a href="./generated/example/">Example Domain 문서용 예시 도메인 안내</a></h3>
   <p class="poket-entry-source">Example Domain</p>
   <div class="poket-tag-pills"><span class="poket-tag-pill">demo</span><span class="poket-tag-pill">sample</span></div>
-  <div class="poket-entry-actions"><a href="./generated/example/index.md">문서 보기</a></div>
+  <div class="poket-entry-actions"><a href="./generated/example/">문서 보기</a></div>
 </article>
 </div>
 

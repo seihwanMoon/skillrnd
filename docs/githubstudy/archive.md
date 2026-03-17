@@ -13,8 +13,8 @@ sidebar_order: -800
 - **GitHub 저장소를 입문용 튜토리얼로 바꾸는 PocketFlow 예제**  
   카테고리: `github`  
   태그: github, repo, tutorial, pocketflow  
-  링크: [문서 보기](./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/index.md)
+  링크: [문서 보기](./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/)
 - **Example Domain 문서용 예시 도메인 안내**  
   카테고리: `docs`  
   태그: demo, sample  
-  링크: [문서 보기](./generated/example/index.md)
+  링크: [문서 보기](./generated/example/)
