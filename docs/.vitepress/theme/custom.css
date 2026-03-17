@@ -21,3 +21,94 @@
   margin-top: 2rem;
 }
 
+.poket-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.poket-keyword-chip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(15, 118, 110, 0.22);
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.14), rgba(245, 158, 11, 0.12));
+  color: var(--vp-c-text-1);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.poket-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.85rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.poket-meta-card {
+  border: 1px solid rgba(15, 118, 110, 0.18);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(15, 118, 110, 0.03));
+  border-radius: 18px;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.05);
+}
+
+.poket-meta-label {
+  color: var(--vp-c-text-2);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.poket-meta-value {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.poket-summary-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(15, 118, 110, 0.08));
+  border-radius: 22px;
+  padding: 1rem 1.1rem 1rem 1.15rem;
+  margin: 1rem 0 1.75rem;
+}
+
+.poket-summary-title {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9a6700;
+  margin-bottom: 0.6rem;
+}
+
+.poket-diagram-shell {
+  border: 1px solid rgba(15, 118, 110, 0.18);
+  background: radial-gradient(circle at top right, rgba(15, 118, 110, 0.08), transparent 40%), linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(15, 118, 110, 0.03));
+  border-radius: 24px;
+  padding: 1rem 1rem 0.25rem;
+  margin: 1rem 0 1.75rem;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+}
+
+.poket-diagram-shell h2 {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 640px) {
+  .poket-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .poket-diagram-shell,
+  .poket-summary-panel {
+    border-radius: 18px;
+  }
+}
