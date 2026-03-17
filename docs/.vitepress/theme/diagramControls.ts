@@ -55,12 +55,12 @@ function enhanceDiagramShell(shell: HTMLElement): void {
 
   const info = document.createElement('div')
   info.className = 'poket-diagram-info'
-  info.textContent = '확대/축소 후 가로 스크롤로 살펴볼 수 있습니다.'
+  info.textContent = '확대/축소 후 가로 스크롤로 자세히 볼 수 있습니다.'
 
   const scaleLabel = document.createElement('span')
   scaleLabel.className = 'poket-diagram-scale'
 
-  const zoomOut = createButton('−', () => {
+  const zoomOut = createButton('-', () => {
     state.scale = clampScale(state.scale - SCALE_STEP)
     updateScale(shell, state, scaleLabel)
   })
@@ -105,17 +105,25 @@ function runEnhancement(): void {
     .forEach((shell) => enhanceDiagramShell(shell))
 }
 
+function scheduleEnhancement(): void {
+  window.requestAnimationFrame(() => {
+    runEnhancement()
+    window.setTimeout(runEnhancement, 120)
+    window.setTimeout(runEnhancement, 400)
+  })
+}
+
 export function setupDiagramControls(router: { onAfterRouteChange?: (cb: () => void) => void }): void {
   if (typeof window === 'undefined') return
 
-  const schedule = () => {
-    window.requestAnimationFrame(() => {
-      window.setTimeout(runEnhancement, 60)
-    })
-  }
+  scheduleEnhancement()
 
-  schedule()
+  const bodyObserver = new MutationObserver(() => {
+    scheduleEnhancement()
+  })
+  bodyObserver.observe(document.body, { childList: true, subtree: true })
+
   router.onAfterRouteChange?.(() => {
-    schedule()
+    scheduleEnhancement()
   })
 }

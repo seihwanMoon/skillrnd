@@ -1,5 +1,5 @@
 ---
-title: "Example Domain Source"
+title: Example Domain Source
 sidebar_hidden: true
 ---
 

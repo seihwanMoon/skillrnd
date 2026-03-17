@@ -1,12 +1,12 @@
 ---
-title: "Example Domain 한국어 해설"
-source_url: "https://example.com"
-category: "docs"
+title: Example Domain 한국어 해설
+source_url: https://example.com
+category: docs
 sidebar_hidden: true
 tags:
-  - "demo"
-  - "sample"
-generated_at: "2026-03-17T04:37:45+00:00"
+- demo
+- sample
+generated_at: '2026-03-17T05:03:07+00:00'
 ---
 
 # Example Domain 한국어 해설
@@ -62,7 +62,7 @@ generated_at: "2026-03-17T04:37:45+00:00"
 ### 핵심 흐름 구조
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables': {'primaryColor':'#d9f5ef','primaryTextColor':'#0f172a','primaryBorderColor':'#0f766e','lineColor':'#0f172a','secondaryColor':'#fef3c7','tertiaryColor':'#ede9fe','fontFamily':'Inter, sans-serif'}}}%%
+%%{init: {'theme':'base','themeVariables': {'primaryColor':'#dbeafe','primaryTextColor':'#0f172a','primaryBorderColor':'#3b82f6','lineColor':'#0f172a','secondaryColor':'#dcfce7','tertiaryColor':'#ede9fe','fontFamily':'Inter, sans-serif'}}}%%
 flowchart LR
     subgraph S1["Source"]
         A["English Source"] --> B["Fetch & Extract"]
@@ -76,9 +76,9 @@ flowchart LR
     end
     B --> C
     E --> F
-    classDef source fill:#cffafe,stroke:#0891b2,color:#0f172a,stroke-width:2px;
-    classDef explain fill:#dcfce7,stroke:#16a34a,color:#0f172a,stroke-width:2px;
-    classDef publish fill:#fef3c7,stroke:#d97706,color:#0f172a,stroke-width:2px;
+    classDef source fill:#dbeafe,stroke:#3b82f6,color:#0f172a,stroke-width:2px;
+    classDef explain fill:#dcfce7,stroke:#10b981,color:#0f172a,stroke-width:2px;
+    classDef publish fill:#fef3c7,stroke:#f59e0b,color:#0f172a,stroke-width:2px;
     class A,B source;
     class C,D,E explain;
     class F,G publish;
@@ -91,12 +91,18 @@ flowchart LR
 ### 문서 소비 흐름
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables': {'primaryColor':'#ede9fe','primaryTextColor':'#0f172a','primaryBorderColor':'#7c3aed','lineColor':'#111827','signalColor':'#111827','actorBkg':'#f8fafc','actorBorder':'#94a3b8','activationBkgColor':'#fef3c7','activationBorderColor':'#f59e0b','fontFamily':'Inter, sans-serif'}}}%%
+%%{init: {'theme':'base','themeVariables': {'primaryColor':'#ede9fe','primaryTextColor':'#0f172a','primaryBorderColor':'#8b5cf6','lineColor':'#111827','signalColor':'#111827','actorBkg':'#dbeafe','actorBorder':'#3b82f6','activationBkgColor':'#fef3c7','activationBorderColor':'#f59e0b','fontFamily':'Inter, sans-serif'}}}%%
 sequenceDiagram
+    box rgb(219,234,254) Reader Layer
     participant Reader as Reader
+    end
+    box rgb(220,252,231) Summary Layer
     participant Entry as Korean Entry
     participant Diagram as Diagram View
+    end
+    box rgb(254,243,199) Source Layer
     participant Source as Source URL
+    end
     Reader->>Entry: Open summary page
     Entry-->>Reader: Show 3-line overview
     Reader->>Diagram: Inspect structure and flow

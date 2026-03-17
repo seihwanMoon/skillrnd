@@ -1,17 +1,17 @@
 {
   "id": "the-pocket-pocketflow-tutorial-codebase-knowledge",
-  "title": "GitHub 저장소를 초보자용 튜토리얼로 분석하는 Pocket Flow 프로젝트",
-  "one_liner": "이 프로젝트는 GitHub 저장소나 로컬 코드베이스를 읽어 핵심 구조를 파악하고, 사람이 따라 읽기 쉬운 튜토리얼 문서로 자동 정리하는 AI 워크플로 예제다.",
-  "summary_preview": "Pocket Flow 기반의 튜토리얼 프로젝트로, 코드베이스를 지식베이스로 바꾼 뒤 학습용 설명 문서로 재구성한다.",
+  "title": "GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제",
+  "one_liner": "이 프로젝트는 GitHub 저장소나 로컬 코드베이스를 읽어 핵심 개념과 관계를 정리하고, 이를 초보자도 따라갈 수 있는 Markdown 튜토리얼로 바꾸는 Pocket Flow 기반 예제다.",
+  "summary_preview": "저장소의 파일을 수집한 뒤 코드베이스의 핵심 abstraction을 뽑아내고, 관계와 학습 순서를 정리해 사람이 읽기 쉬운 튜토리얼로 변환한다.",
   "source_title": "Analyze a GitHub repository",
   "source_url": "https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge",
   "category": "github",
   "keywords": [
     "Pocket Flow",
-    "코드베이스 분석",
+    "GitHub 저장소 분석",
     "Workflow 파이프라인",
     "BatchNode",
-    "튜토리얼 자동 생성"
+    "LLM 튜토리얼 생성"
   ],
   "tags": [
     "github",
@@ -19,10 +19,10 @@
     "tutorial",
     "pocketflow"
   ],
-  "generated_at": "2026-03-17T04:39:24+00:00",
+  "generated_at": "2026-03-17T05:04:30+00:00",
   "entry_path": "generated/the-pocket-pocketflow-tutorial-codebase-knowledge/index.md",
   "local_entry_path": "entries/the-pocket-pocketflow-tutorial-codebase-knowledge/index.md",
   "source_path": "generated/the-pocket-pocketflow-tutorial-codebase-knowledge/source.md",
-  "published_at": "2026-03-17T04:39:24+00:00",
+  "published_at": "2026-03-17T05:04:30+00:00",
   "docs_section": "githubstudy"
 }

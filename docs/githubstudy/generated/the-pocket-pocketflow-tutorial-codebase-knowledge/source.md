@@ -1,5 +1,5 @@
 ---
-title: "Analyze a GitHub repository Source"
+title: Analyze a GitHub repository Source
 sidebar_hidden: true
 ---
 

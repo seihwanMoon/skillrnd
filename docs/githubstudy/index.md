@@ -45,7 +45,7 @@ sidebar_order: -1000
 ## 찾아보기
 
 <GitHubStudyExplorer
-  items-json='[{"title": "GitHub 저장소를 초보자용 튜토리얼로 분석하는 Pocket Flow 프로젝트", "source_title": "Analyze a GitHub repository", "category": "github", "date": "2026-03-17", "link": "./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/", "preview": "Pocket Flow 기반의 튜토리얼 프로젝트로, 코드베이스를 지식베이스로 바꾼 뒤 학습용 설명 문서로 재구성한다.", "keywords": ["Pocket Flow", "코드베이스 분석", "Workflow 파이프라인", "BatchNode", "튜토리얼 자동 생성"], "tags": ["github", "repo", "tutorial", "pocketflow"], "badges": [{"label": "Recent", "tone": "info"}, {"label": "Exporting", "tone": "neutral"}, {"label": "Codex", "tone": "neutral"}]}, {"title": "Example Domain 한국어 해설", "source_title": "Example Domain", "category": "docs", "date": "2026-03-17", "link": "./generated/example/", "preview": "`Example Domain`의 핵심 주제를 빠르게 이해할 수 있도록 큰 그림 중심으로 정리한 문서다.", "keywords": ["GitHub", "Korean Summary", "Workflow", "Mermaid", "Practical Guide"], "tags": ["demo", "sample"], "badges": [{"label": "Recent", "tone": "info"}, {"label": "Published", "tone": "success"}, {"label": "Mock", "tone": "neutral"}]}]'
+  items-json='[{"title": "GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제", "source_title": "Analyze a GitHub repository", "category": "github", "date": "2026-03-17", "link": "./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/", "preview": "저장소의 파일을 수집한 뒤 코드베이스의 핵심 abstraction을 뽑아내고, 관계와 학습 순서를 정리해 사람이 읽기 쉬운 튜토리얼로 변환한다.", "keywords": ["Pocket Flow", "GitHub 저장소 분석", "Workflow 파이프라인", "BatchNode", "LLM 튜토리얼 생성"], "tags": ["github", "repo", "tutorial", "pocketflow"], "badges": [{"label": "Recent", "tone": "info"}, {"label": "Exporting", "tone": "neutral"}, {"label": "Codex", "tone": "neutral"}]}, {"title": "Example Domain 한국어 해설", "source_title": "Example Domain", "category": "docs", "date": "2026-03-17", "link": "./generated/example/", "preview": "`Example Domain`의 핵심 주제를 빠르게 이해할 수 있도록 큰 그림 중심으로 정리한 문서다.", "keywords": ["GitHub", "Korean Summary", "Workflow", "Mermaid", "Practical Guide"], "tags": ["demo", "sample"], "badges": [{"label": "Recent", "tone": "info"}, {"label": "Published", "tone": "success"}, {"label": "Mock", "tone": "neutral"}]}]'
 />
 
 ## 최신 문서
@@ -53,11 +53,11 @@ sidebar_order: -1000
 <div class="poket-entry-grid">
 <article class="poket-entry-card">
   <div class="poket-entry-card-top"><span class="poket-entry-category">github</span><span class="poket-entry-date">2026-03-17</span></div>
-  <h3 class="poket-entry-title"><a href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 초보자용 튜토리얼로 분석하는 Pocket Flow 프로젝트</a></h3>
+  <h3 class="poket-entry-title"><a href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제</a></h3>
   <p class="poket-entry-source">Analyze a GitHub repository</p>
-  <p class="poket-entry-preview">Pocket Flow 기반의 튜토리얼 프로젝트로, 코드베이스를 지식베이스로 바꾼 뒤 학습용 설명 문서로 재구성한다.</p>
+  <p class="poket-entry-preview">저장소의 파일을 수집한 뒤 코드베이스의 핵심 abstraction을 뽑아내고, 관계와 학습 순서를 정리해 사람이 읽기 쉬운 튜토리얼로 변환한다.</p>
   <div class="poket-badge-row"><span class="poket-status-badge poket-status-badge-info">Recent</span><span class="poket-status-badge poket-status-badge-neutral">Exporting</span><span class="poket-status-badge poket-status-badge-neutral">Codex</span></div>
-  <div class="poket-tag-pills"><span class="poket-tag-pill">Pocket Flow</span><span class="poket-tag-pill">코드베이스 분석</span><span class="poket-tag-pill">Workflow 파이프라인</span><span class="poket-tag-pill">BatchNode</span></div>
+  <div class="poket-tag-pills"><span class="poket-tag-pill">Pocket Flow</span><span class="poket-tag-pill">GitHub 저장소 분석</span><span class="poket-tag-pill">Workflow 파이프라인</span><span class="poket-tag-pill">BatchNode</span></div>
   <div class="poket-entry-actions"><a href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">문서 보기</a></div>
 </article>
 <article class="poket-entry-card">
@@ -73,7 +73,7 @@ sidebar_order: -1000
 
 ## 빠른 링크
 
-- [GitHub 저장소를 초보자용 튜토리얼로 분석하는 Pocket Flow 프로젝트](./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/)
+- [GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제](./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/)
 - [Example Domain 한국어 해설](./generated/example/)
 
 ## 카테고리
@@ -91,7 +91,7 @@ sidebar_order: -1000
   <summary class="poket-group-summary">github<span class="poket-group-count">1</span></summary>
   <div class="poket-group-list">
 <div class="poket-group-item">
-  <a class="poket-group-link" href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 초보자용 튜토리얼로 분석하는 Pocket Flow 프로젝트</a>
+  <a class="poket-group-link" href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제</a>
   <div class="poket-group-sub">Analyze a GitHub repository · 2026-03-17</div>
 </div>
   </div>
@@ -112,7 +112,7 @@ sidebar_order: -1000
   <summary class="poket-group-summary">github<span class="poket-group-count">1</span></summary>
   <div class="poket-group-list">
 <div class="poket-group-item">
-  <a class="poket-group-link" href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 초보자용 튜토리얼로 분석하는 Pocket Flow 프로젝트</a>
+  <a class="poket-group-link" href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제</a>
   <div class="poket-group-sub">Analyze a GitHub repository · 2026-03-17</div>
 </div>
   </div>
@@ -121,7 +121,7 @@ sidebar_order: -1000
   <summary class="poket-group-summary">pocketflow<span class="poket-group-count">1</span></summary>
   <div class="poket-group-list">
 <div class="poket-group-item">
-  <a class="poket-group-link" href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 초보자용 튜토리얼로 분석하는 Pocket Flow 프로젝트</a>
+  <a class="poket-group-link" href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제</a>
   <div class="poket-group-sub">Analyze a GitHub repository · 2026-03-17</div>
 </div>
   </div>
@@ -130,7 +130,7 @@ sidebar_order: -1000
   <summary class="poket-group-summary">repo<span class="poket-group-count">1</span></summary>
   <div class="poket-group-list">
 <div class="poket-group-item">
-  <a class="poket-group-link" href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 초보자용 튜토리얼로 분석하는 Pocket Flow 프로젝트</a>
+  <a class="poket-group-link" href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제</a>
   <div class="poket-group-sub">Analyze a GitHub repository · 2026-03-17</div>
 </div>
   </div>
@@ -148,7 +148,7 @@ sidebar_order: -1000
   <summary class="poket-group-summary">tutorial<span class="poket-group-count">1</span></summary>
   <div class="poket-group-list">
 <div class="poket-group-item">
-  <a class="poket-group-link" href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 초보자용 튜토리얼로 분석하는 Pocket Flow 프로젝트</a>
+  <a class="poket-group-link" href="./generated/the-pocket-pocketflow-tutorial-codebase-knowledge/">GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제</a>
   <div class="poket-group-sub">Analyze a GitHub repository · 2026-03-17</div>
 </div>
   </div>
