@@ -5,7 +5,7 @@ category: github
 sidebar_hidden: true
 tags:
 - agents
-generated_at: '2026-03-17T05:42:26+00:00'
+generated_at: '2026-03-17T06:17:47+00:00'
 ---
 
 # Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스
@@ -30,7 +30,7 @@ generated_at: '2026-03-17T05:42:26+00:00'
 <div class="poket-meta-grid">
   <div class="poket-meta-card">
     <div class="poket-meta-label">원문 제목</div>
-    <div class="poket-meta-value">or</div>
+    <div class="poket-meta-value">The batteries-included agent harness.</div>
   </div>
   <div class="poket-meta-card">
     <div class="poket-meta-label">카테고리</div>

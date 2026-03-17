@@ -119,15 +119,12 @@ function selectCategory(category: string) {
         </div>
         <div class="poket-tag-pills">
           <span
-            v-for="keyword in item.keywords.slice(0, 4)"
+            v-for="keyword in item.keywords.slice(0, 3)"
             :key="keyword"
             class="poket-tag-pill"
           >
             {{ keyword }}
           </span>
-        </div>
-        <div class="poket-entry-actions">
-          <a :href="item.link">문서 보기</a>
         </div>
       </article>
     </div>

@@ -1,9 +1,9 @@
 ---
-title: or Source
+title: The batteries-included agent harness. Source
 sidebar_hidden: true
 ---
 
-# Source: or
+# Source: The batteries-included agent harness.
 
 - URL: https://github.com/langchain-ai/deepagents
 - Word count: 2652
