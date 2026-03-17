@@ -396,13 +396,13 @@
 .poket-explorer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  gap: 0.85rem;
 }
 
 .poket-explorer-card {
   border: 1px solid rgba(15, 118, 110, 0.14);
   border-radius: 22px;
-  padding: 0.85rem 0.9rem 0.9rem;
+  padding: 0.78rem 0.84rem 0.82rem;
   background: rgba(255, 255, 255, 0.88);
 }
 
@@ -450,7 +450,7 @@
 .poket-entry-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
+  gap: 0.85rem;
   margin: 1rem 0 1.75rem;
 }
 
@@ -458,8 +458,8 @@
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(15, 118, 110, 0.16);
-  border-radius: 22px;
-  padding: 0.9rem 0.95rem 0.95rem;
+  border-radius: 20px;
+  padding: 0.78rem 0.84rem 0.82rem;
   background:
     radial-gradient(circle at bottom right, rgba(15, 118, 110, 0.12), transparent 38%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(15, 118, 110, 0.03));
@@ -470,7 +470,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.4rem;
 }
 
 .poket-entry-category {
@@ -487,8 +487,8 @@
 
 .poket-entry-title {
   margin: 0;
-  font-size: 0.98rem;
-  line-height: 1.4;
+  font-size: 0.92rem;
+  line-height: 1.34;
 }
 
 .poket-entry-title a {
@@ -497,10 +497,10 @@
 }
 
 .poket-entry-source {
-  margin: 0.35rem 0 0;
+  margin: 0.22rem 0 0;
   color: var(--vp-c-text-2);
-  font-size: 0.84rem;
-  line-height: 1.45;
+  font-size: 0.8rem;
+  line-height: 1.32;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
@@ -515,9 +515,9 @@
 }
 
 .poket-entry-preview {
-  margin: 0.55rem 0 0;
-  font-size: 0.88rem;
-  line-height: 1.55;
+  margin: 0.38rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.42;
   color: var(--vp-c-text-2);
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -582,17 +582,17 @@
 .poket-tag-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
-  margin: 0.55rem 0 0;
+  gap: 0.38rem;
+  margin: 0.42rem 0 0;
 }
 
 .poket-tag-pill {
   display: inline-flex;
   border-radius: 999px;
-  padding: 0.26rem 0.58rem;
+  padding: 0.22rem 0.52rem;
   background: rgba(245, 158, 11, 0.12);
   border: 1px solid rgba(245, 158, 11, 0.14);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 700;
 }
 
@@ -700,23 +700,19 @@
 }
 
 .poket-archive-list.is-compact {
-  gap: 0.8rem;
+  gap: 0.7rem;
 }
 
 .poket-archive-list.is-compact .poket-archive-item {
-  padding: 0.8rem 0.85rem 0.82rem;
+  padding: 0.72rem 0.78rem 0.74rem;
 }
 
 .poket-archive-list.is-compact .poket-entry-preview {
   -webkit-line-clamp: 1;
 }
 
-.poket-archive-list.is-compact .poket-tag-pills {
-  display: none;
-}
-
 .poket-archive-list.is-expanded .poket-archive-item {
-  padding: 1rem 1rem 1rem;
+  padding: 0.9rem 0.95rem 0.95rem;
 }
 
 .poket-archive-list.is-expanded .poket-entry-preview {
