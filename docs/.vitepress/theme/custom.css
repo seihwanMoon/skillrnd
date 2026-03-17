@@ -300,6 +300,9 @@
 }
 
 .poket-entry-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 0.7rem;
 }
 
@@ -333,6 +336,20 @@
   line-height: 1.6;
 }
 
+.poket-entry-date,
+.poket-archive-date {
+  color: var(--vp-c-text-2);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.poket-entry-preview {
+  margin: 0.8rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+}
+
 .poket-tag-pills {
   display: flex;
   flex-wrap: wrap;
@@ -355,6 +372,79 @@
   font-weight: 700;
 }
 
+.poket-group-detail {
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  padding: 0.2rem 1rem 0.35rem;
+  margin: 0.9rem 0;
+}
+
+.poket-group-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 800;
+  padding: 0.85rem 0 0.7rem;
+}
+
+.poket-group-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.1);
+  color: #0f766e;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.poket-group-list {
+  display: grid;
+  gap: 0.8rem;
+  padding: 0 0 0.7rem;
+}
+
+.poket-group-item {
+  border-top: 1px solid rgba(15, 118, 110, 0.08);
+  padding-top: 0.8rem;
+}
+
+.poket-group-link {
+  font-weight: 700;
+}
+
+.poket-group-sub {
+  margin-top: 0.3rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.88rem;
+}
+
+.poket-archive-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0 1.75rem;
+}
+
+.poket-archive-item {
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(15, 118, 110, 0.03));
+  padding: 1rem 1rem 1.05rem;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.04);
+}
+
+.poket-archive-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+
 @media (max-width: 640px) {
   .poket-meta-grid {
     grid-template-columns: 1fr;
@@ -374,6 +464,8 @@
   .poket-hub-hero,
   .poket-stat-card,
   .poket-entry-card,
+  .poket-archive-item,
+  .poket-group-detail,
   .poket-usecase-card,
   .poket-reading-item {
     border-radius: 18px;

@@ -1,17 +1,26 @@
 {
   "id": "example",
-  "title": "Example Domain 문서용 예시 도메인 안내",
+  "title": "Example Domain 한국어 해설",
+  "one_liner": "영문 기술 자료의 큰 그림과 실무 포인트를 빠르게 파악할 수 있도록 재구성한 한국어 안내서다.",
+  "summary_preview": "이 자료는 `Example Domain` 주제를 다루는 영문 기술 문서다.",
   "source_title": "Example Domain",
   "source_url": "https://example.com",
   "category": "docs",
+  "keywords": [
+    "GitHub",
+    "한국어 해설",
+    "요약 정리",
+    "원문 링크",
+    "실무 관점"
+  ],
   "tags": [
     "demo",
     "sample"
   ],
-  "generated_at": "2026-03-16T12:13:15+00:00",
+  "generated_at": "2026-03-17T02:05:57+00:00",
   "entry_path": "generated/example/index.md",
   "local_entry_path": "entries/example/index.md",
   "source_path": "generated/example/source.md",
-  "published_at": "2026-03-16T12:33:18+00:00",
+  "published_at": "2026-03-17T02:05:57+00:00",
   "docs_section": "githubstudy"
 }
