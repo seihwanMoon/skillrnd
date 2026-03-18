@@ -1,36 +1,25 @@
 ---
 title: Manufacturing AI
+sidebar_label: Hub
+sidebar_order: -1000
 outline: deep
 ---
 
 # Manufacturing AI
 
-이 섹션은 제조 현장에서 AI를 어떻게 실용적으로 붙일 수 있는지에 집중한다.
+이 섹션은 제조 현장에서 AI를 적용하는 문제를 구조적으로 정리합니다.
 
-## 우선 다룰 문제
+## 분류 구조
 
-- 품질 검사 자동화
-- 설비 이상징후 탐지
-- 작업 표준서와 점검표 문서화
-- 현장 지식과 노하우의 구조화
-- 도면, 공정 문서, 리포트 자동 요약
+- [Fundamentals](./fundamentals/index.md)
+- [Use Cases](./use-cases/index.md)
+- [Systems](./systems/index.md)
+- [Archive](./archive/index.md)
 
-## 이 사이트와의 연결점
+## 운영 원칙
 
-- `skills`는 작업 도구를 정리한다.
-- `recipes`는 workflow를 정리한다.
-- `Manufacturing AI`는 실제 적용 주제를 정리한다.
-
-## 추천 프레임
-
-1. 현장 문제를 정의한다.
-2. 데이터와 문서 흐름을 정리한다.
-3. 어떤 AI 도구가 들어갈 수 있는지 본다.
-4. 검증 가능한 작은 자동화부터 시작한다.
-
-## 앞으로 추가할 페이지
-
-- 제조 AI use case map
-- 품질 검사 pipeline 메모
-- 생산기술 문서 자동화 아이디어
+- 기본 개념과 도입 판단은 `Fundamentals`
+- 실제 적용 예시는 `Use Cases`
+- 시스템 구조와 운영 방식은 `Systems`
+- 오래된 문서는 `Archive`
 

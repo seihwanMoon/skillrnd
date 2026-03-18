@@ -19,10 +19,22 @@ type SidebarEntry = {
   link: string
   order: number
   relativePath: string
+  fileName: string
 }
 
 type SidebarLeaf = { text: string; link: string }
 type SidebarGroup = { text: string; link?: string; items?: SidebarLeaf[] }
+
+type SidebarMode = 'flat' | 'grouped'
+
+type SectionSidebarOptions = {
+  section: string
+  sectionLabel: string
+  mode: SidebarMode
+  useFrontmatterLabels?: boolean
+  rootIndexLabel?: string
+  nestedIndexLabel?: string
+}
 
 function toPosix(value: string): string {
   return value.split(sep).join('/')
@@ -72,29 +84,58 @@ function walkMarkdownFiles(dirPath: string): string[] {
 function sortSidebarEntries(left: SidebarEntry, right: SidebarEntry): number {
   if (left.order !== right.order) return left.order - right.order
   if (left.dateWeight !== right.dateWeight) return left.dateWeight - right.dateWeight
-  return left.label.localeCompare(right.label, 'ko')
+  return left.fileName.localeCompare(right.fileName, 'ko')
 }
 
-function buildSidebarItems(section: string): SidebarGroup[] {
-  const sectionDir = resolve(docsRoot, section)
+function buildEntryLabel(
+  filePath: string,
+  relativePath: string,
+  options: SectionSidebarOptions
+): { label: string; fileName: string } {
+  const fileName = relativePath.split('/').pop() ?? relativePath
+  const meta = parseFrontmatter(filePath)
+  const isRootIndex = relativePath === 'index'
+  const isNestedIndex = fileName === 'index' && !isRootIndex
+
+  if (isRootIndex) {
+    return { label: options.rootIndexLabel ?? 'Hub', fileName }
+  }
+
+  if (isNestedIndex) {
+    return { label: options.nestedIndexLabel ?? 'Overview', fileName }
+  }
+
+  if (options.useFrontmatterLabels !== false) {
+    const frontmatterLabel = meta.sidebar_label ?? meta.title
+    if (frontmatterLabel) {
+      return { label: frontmatterLabel, fileName }
+    }
+  }
+
+  return { label: humanize(fileName), fileName }
+}
+
+function buildSidebarItems(options: SectionSidebarOptions): SidebarGroup[] {
+  const sectionDir = resolve(docsRoot, options.section)
   const entries = walkMarkdownFiles(sectionDir)
     .map((filePath): SidebarEntry => {
       const relativePath = toPosix(relative(sectionDir, filePath)).replace(/\.md$/, '')
       const meta = parseFrontmatter(filePath)
-      const slug = relativePath === 'index' ? 'index' : relativePath
-      const label =
-        meta.sidebar_label ??
-        meta.title ??
-        (slug === 'index' ? '허브' : humanize(slug.split('/').pop() ?? slug))
-      const link = `/${section}/${relativePath}`
-      const order = Number(meta.sidebar_order ?? (slug === 'index' ? -1000 : 0))
+      const { label, fileName } = buildEntryLabel(filePath, relativePath, options)
+      const link = `/${options.section}/${relativePath}`
+      const isRootIndex = relativePath === 'index'
+      const order = Number(meta.sidebar_order ?? (isRootIndex ? -1000 : fileName === 'index' ? -100 : 0))
       const hidden = meta.sidebar_hidden === 'true'
       const parsedDate = meta.date ? Date.parse(meta.date) : Number.NaN
       const dateWeight = Number.isNaN(parsedDate) ? 0 : -parsedDate
-      return { dateWeight, hidden, label, link, order, relativePath }
+      return { dateWeight, hidden, label, link, order, relativePath, fileName }
     })
     .filter((item) => !item.hidden)
     .sort(sortSidebarEntries)
+
+  if (options.mode === 'flat') {
+    return entries.map((entry) => ({ text: entry.label, link: entry.link }))
+  }
 
   const topLevel: SidebarGroup[] = []
   const groups = new Map<string, SidebarEntry[]>()
@@ -123,6 +164,35 @@ function buildSidebarItems(section: string): SidebarGroup[] {
 
   return [...topLevel, ...groupedItems]
 }
+
+const sidebarSections: SectionSidebarOptions[] = [
+  {
+    section: 'blog',
+    sectionLabel: '블로그',
+    mode: 'flat',
+    rootIndexLabel: 'Hub'
+  },
+  {
+    section: 'githubstudy',
+    sectionLabel: 'GitHub Study',
+    mode: 'flat',
+    rootIndexLabel: 'Hub'
+  },
+  {
+    section: 'manufacturing-ai',
+    sectionLabel: '제조 AI',
+    mode: 'grouped',
+    rootIndexLabel: 'Hub',
+    nestedIndexLabel: 'Overview'
+  },
+  {
+    section: 'vibe-coding',
+    sectionLabel: 'Vibe Coding',
+    mode: 'grouped',
+    rootIndexLabel: 'Hub',
+    nestedIndexLabel: 'Overview'
+  }
+]
 
 export default withMermaid(
   defineConfig({
@@ -157,22 +227,10 @@ export default withMermaid(
       ],
       sidebar: [
         { text: '홈', link: '/' },
-        {
-          text: '블로그',
-          items: buildSidebarItems('blog')
-        },
-        {
-          text: 'GitHub Study',
-          items: buildSidebarItems('githubstudy')
-        },
-        {
-          text: '제조 AI',
-          items: buildSidebarItems('manufacturing-ai')
-        },
-        {
-          text: 'Vibe Coding',
-          items: buildSidebarItems('vibe-coding')
-        },
+        ...sidebarSections.map((section) => ({
+          text: section.sectionLabel,
+          items: buildSidebarItems(section)
+        })),
         {
           text: '허브',
           items: [
