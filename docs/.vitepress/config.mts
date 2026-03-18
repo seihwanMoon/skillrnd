@@ -23,7 +23,7 @@ type SidebarEntry = {
 }
 
 type SidebarLeaf = { text: string; link: string }
-type SidebarGroup = { text: string; link?: string; items?: SidebarLeaf[] }
+type SidebarGroup = { text: string; link?: string; items?: SidebarLeaf[]; collapsed?: boolean }
 
 type SidebarMode = 'flat' | 'grouped'
 
@@ -157,6 +157,7 @@ function buildSidebarItems(options: SectionSidebarOptions): SidebarGroup[] {
     .sort((left, right) => left[0].localeCompare(right[0], 'ko'))
     .map(([groupKey, groupEntries]): SidebarGroup => ({
       text: humanize(groupKey),
+      collapsed: true,
       items: groupEntries
         .sort(sortSidebarEntries)
         .map((entry) => ({ text: entry.label, link: entry.link }))
