@@ -18,7 +18,11 @@ type SidebarEntry = {
   label: string
   link: string
   order: number
+  relativePath: string
 }
+
+type SidebarLeaf = { text: string; link: string }
+type SidebarGroup = { text: string; link?: string; items?: SidebarLeaf[] }
 
 function toPosix(value: string): string {
   return value.split(sep).join('/')
@@ -65,37 +69,67 @@ function walkMarkdownFiles(dirPath: string): string[] {
   return files
 }
 
-function buildSidebarItems(section: string): Array<{ text: string; link: string }> {
+function sortSidebarEntries(left: SidebarEntry, right: SidebarEntry): number {
+  if (left.order !== right.order) return left.order - right.order
+  if (left.dateWeight !== right.dateWeight) return left.dateWeight - right.dateWeight
+  return left.label.localeCompare(right.label, 'ko')
+}
+
+function buildSidebarItems(section: string): SidebarGroup[] {
   const sectionDir = resolve(docsRoot, section)
-  const items = walkMarkdownFiles(sectionDir)
+  const entries = walkMarkdownFiles(sectionDir)
     .map((filePath): SidebarEntry => {
       const relativePath = toPosix(relative(sectionDir, filePath)).replace(/\.md$/, '')
       const meta = parseFrontmatter(filePath)
       const slug = relativePath === 'index' ? 'index' : relativePath
-      const label = meta.sidebar_label ?? meta.title ?? (slug === 'index' ? '허브' : humanize(slug.split('/').pop() ?? slug))
+      const label =
+        meta.sidebar_label ??
+        meta.title ??
+        (slug === 'index' ? '허브' : humanize(slug.split('/').pop() ?? slug))
       const link = `/${section}/${relativePath}`
       const order = Number(meta.sidebar_order ?? (slug === 'index' ? -1000 : 0))
       const hidden = meta.sidebar_hidden === 'true'
       const parsedDate = meta.date ? Date.parse(meta.date) : Number.NaN
       const dateWeight = Number.isNaN(parsedDate) ? 0 : -parsedDate
-      return { dateWeight, hidden, label, link, order }
+      return { dateWeight, hidden, label, link, order, relativePath }
     })
     .filter((item) => !item.hidden)
-    .sort((left, right) => {
-      if (left.order !== right.order) return left.order - right.order
-      if (left.dateWeight !== right.dateWeight) return left.dateWeight - right.dateWeight
-      return left.label.localeCompare(right.label, 'ko')
-    })
-    .map((item) => ({ text: item.label, link: item.link }))
+    .sort(sortSidebarEntries)
 
-  return items
+  const topLevel: SidebarGroup[] = []
+  const groups = new Map<string, SidebarEntry[]>()
+
+  for (const entry of entries) {
+    const segments = entry.relativePath.split('/')
+    if (segments.length === 1) {
+      topLevel.push({ text: entry.label, link: entry.link })
+      continue
+    }
+
+    const groupKey = segments[0]
+    const groupItems = groups.get(groupKey) ?? []
+    groupItems.push(entry)
+    groups.set(groupKey, groupItems)
+  }
+
+  const groupedItems = Array.from(groups.entries())
+    .sort((left, right) => left[0].localeCompare(right[0], 'ko'))
+    .map(([groupKey, groupEntries]): SidebarGroup => ({
+      text: humanize(groupKey),
+      items: groupEntries
+        .sort(sortSidebarEntries)
+        .map((entry) => ({ text: entry.label, link: entry.link }))
+    }))
+
+  return [...topLevel, ...groupedItems]
 }
 
 export default withMermaid(
   defineConfig({
     lang: 'ko-KR',
     title: 'Moonworld AI Workbench',
-    description: '한국어 기반의 AI 작업 허브. 스킬 문서, 바이브 코딩, 제조 AI, 한국 특화 큐레이션을 다룬다.',
+    description:
+      '지식 기반 AI 작업 허브. 실무 문서, 바이브 코딩, 제조 AI, GitHub 학습 컬렉션을 다룹니다.',
     base,
     cleanUrls: true,
     lastUpdated: true,
@@ -148,9 +182,7 @@ export default withMermaid(
           ]
         }
       ],
-      socialLinks: [
-        { icon: 'github', link: repoUrl }
-      ],
+      socialLinks: [{ icon: 'github', link: repoUrl }],
       footer: {
         message: 'Built with VitePress and published on GitHub Pages.',
         copyright: 'Copyright © 2026'

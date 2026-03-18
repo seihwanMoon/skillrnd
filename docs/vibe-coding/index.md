@@ -1,36 +1,33 @@
 ---
 title: Vibe Coding
+sidebar_label: Hub
+sidebar_order: -1000
 outline: deep
 ---
 
 # Vibe Coding
 
-이 섹션은 `생성 -> 실행 -> 검증 -> 수정 -> 문서화`의 루프를 중심으로 AI coding workflow를 정리한다.
+이 섹션은 `생성 -> 실행 -> 검증 -> 수정 -> 문서화` 루프를 중심으로 AI coding workflow를 정리합니다.
 
-## 핵심 질문
+## 분류 구조
 
-- 어떤 도구 조합이 가장 빠른가
-- 생성된 코드를 어떻게 검증할 것인가
-- 문서와 테스트를 같은 루프 안에 넣을 수 있는가
+- [Fundamentals](./fundamentals/index.md)
+- [Workflows](./workflows/index.md)
+- [Tools](./tools/index.md)
+- [Case Studies](./case-studies/index.md)
+- [Archive](./archive/index.md)
+
+## 운영 원칙
+
+- 오래 가는 개념은 `Fundamentals`
+- 반복 가능한 절차는 `Workflows`
+- 도구별 사용법과 비교는 `Tools`
+- 실험/실전 기록은 `Case Studies`
+- 오래된 문서는 `Archive`
 
 ## 추천 시작점
 
-- [playwright](/skills/playwright)
-- [playwright-interactive](/skills/playwright-interactive)
-- [repo-intelligence](/skills/repo-intelligence)
-- [저장소 분석 레시피](/recipes/repo-analysis)
-
-## 다룰 주제
-
-- promptless workflow
-- long-running QA loop
-- spec-driven build
-- 생성 후 검증 자동화
-- agent 조합 전략
-
-## 앞으로 추가할 페이지
-
-- vibe coding starter stack
-- 실전 session log
-- toolchain 비교
+- [Vibe Coding Starter Stack](./fundamentals/starter-stack.md)
+- [Spec-Driven Build](./workflows/spec-driven-build.md)
+- [Codex CLI Workflow](./tools/codex-cli.md)
 
