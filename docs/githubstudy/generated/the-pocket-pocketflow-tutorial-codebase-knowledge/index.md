@@ -9,6 +9,19 @@ tags:
 - tutorial
 - pocketflow
 generated_at: '2026-03-17T05:04:30+00:00'
+source_title: Analyze a GitHub repository
+keywords:
+- Pocket Flow
+- GitHub 저장소 분석
+- Workflow 파이프라인
+- BatchNode
+- LLM 튜토리얼 생성
+one_liner: 이 프로젝트는 GitHub 저장소나 로컬 코드베이스를 읽어 핵심 개념과 관계를 정리하고, 이를 초보자도 따라갈 수 있는 Markdown
+  튜토리얼로 바꾸는 Pocket Flow 기반 예제다.
+summary_preview: 저장소의 파일을 수집한 뒤 코드베이스의 핵심 abstraction을 뽑아내고, 관계와 학습 순서를 정리해 사람이 읽기
+  쉬운 튜토리얼로 변환한다.
+published_at: '2026-03-18T04:26:17+00:00'
+manual: false
 ---
 
 # GitHub 저장소를 분석해 초보자용 튜토리얼로 바꾸는 Pocket Flow 예제

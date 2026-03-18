@@ -6,6 +6,18 @@ sidebar_hidden: true
 tags:
 - claude
 generated_at: '2026-03-17T06:08:41+00:00'
+source_title: Claude Code Plugins Directory
+keywords:
+- Claude Code
+- Plugin Marketplace
+- Internal Plugins
+- External Plugins
+- MCP
+one_liner: 이 문서는 Claude Code에서 설치할 수 있는 공식·서드파티 플러그인을 한곳에 모아 소개하는 GitHub 기반 디렉터리다.
+summary_preview: Claude Code Plugins Directory는 Claude Code용 플러그인을 모아둔 큐레이션 마켓플레이스
+  성격의 저장소다.
+published_at: '2026-03-18T04:26:17+00:00'
+manual: false
 ---
 
 # Claude Code 플러그인 디렉터리

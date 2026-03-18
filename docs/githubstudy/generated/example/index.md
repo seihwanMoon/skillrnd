@@ -7,6 +7,17 @@ tags:
 - demo
 - sample
 generated_at: '2026-03-17T05:03:07+00:00'
+source_title: Example Domain
+keywords:
+- GitHub
+- Korean Summary
+- Workflow
+- Mermaid
+- Practical Guide
+one_liner: 영문 기술 자료의 구조와 실무 포인트를 한국어로 빠르게 파악하도록 재구성한 요약 문서다.
+summary_preview: '`Example Domain`의 핵심 주제를 빠르게 이해할 수 있도록 큰 그림 중심으로 정리한 문서다.'
+published_at: '2026-03-18T04:26:17+00:00'
+manual: false
 ---
 
 # Example Domain 한국어 해설

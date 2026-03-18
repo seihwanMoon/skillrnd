@@ -6,6 +6,19 @@ sidebar_hidden: true
 tags:
 - agents
 generated_at: '2026-03-17T06:17:47+00:00'
+source_title: The batteries-included agent harness.
+keywords:
+- Agent Harness
+- Planning
+- Filesystem/Shell
+- Sub-agents
+- LangGraph
+one_liner: Deep Agents는 계획 수립, 파일 작업, 셸 실행, 서브에이전트, 문맥 관리를 기본으로 갖춘 오픈소스 AI 에이전트 실행
+  프레임워크다.
+summary_preview: Deep Agents는 프롬프트, 도구, 컨텍스트 처리를 처음부터 손으로 엮지 않아도 바로 동작하는 에이전트를 제공하는
+  'batteries-included' 스타일의 프로젝트다.
+published_at: '2026-03-18T04:26:17+00:00'
+manual: false
 ---
 
 # Deep Agents: 즉시 실행 가능한 AI 에이전트 하네스

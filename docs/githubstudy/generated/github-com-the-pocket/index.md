@@ -6,6 +6,18 @@ sidebar_hidden: true
 tags:
 - uncategorized
 generated_at: '2026-03-17T06:53:21+00:00'
+source_title: The Pocket
+keywords:
+- PocketFlow
+- Agentic Coding
+- Multi-Agent
+- RAG
+- Workflow Template
+one_liner: The Pocket은 Pocket Flow를 중심으로 에이전트형 AI를 작게 설계하고 빠르게 실험할 수 있게 돕는 GitHub
+  조직이다.
+summary_preview: The Pocket은 복잡한 대형 프레임워크 대신, 매우 작은 구조로 AI 시스템의 핵심 패턴을 조합하려는 방향을 제시한다.
+published_at: '2026-03-18T04:26:17+00:00'
+manual: false
 ---
 
 # The Pocket: Pocket Flow 중심의 경량 AI 에이전트 개발 아카이브
