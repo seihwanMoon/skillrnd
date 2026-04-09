@@ -21,6 +21,19 @@
   margin-top: 2rem;
 }
 
+.vp-doc h1 {
+  font-size: 2.2rem;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 960px) {
+  .vp-doc h1 {
+    font-size: 1.85rem;
+  }
+}
+
 .poket-keywords {
   display: flex;
   flex-wrap: wrap;

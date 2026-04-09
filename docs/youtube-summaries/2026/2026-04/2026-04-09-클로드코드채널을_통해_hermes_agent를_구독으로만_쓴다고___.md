@@ -12,6 +12,8 @@ summary_line: "Anthropic의 서드파티 클로드 구독 인증 차단 이후, 
 tags: ["youtube", "summary", "general", "클로드-코드-채널", "헤르메스-에이전트", "디스코드-봇", "alex-ai"]
 ---
 
+# 클로드코드채널을 통해 Hermes Agent를 구독으로만 쓴다고???
+
 - 원본 URL: https://youtu.be/X6lXs8IcoHw?si=9IGasBiUXc0u2Eyr
 - 원본 영상 등록일: 2026-04-07
 - 재생시간: 11:44
