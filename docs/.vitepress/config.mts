@@ -174,6 +174,20 @@ const sidebarSections: SectionSidebarOptions[] = [
     rootIndexLabel: 'Hub'
   },
   {
+    section: 'youtube-summaries',
+    sectionLabel: 'YouTube Summaries',
+    mode: 'grouped',
+    rootIndexLabel: 'Hub',
+    nestedIndexLabel: 'Overview'
+  },
+  {
+    section: 'github-summaries',
+    sectionLabel: 'GitHub Summaries',
+    mode: 'grouped',
+    rootIndexLabel: 'Hub',
+    nestedIndexLabel: 'Overview'
+  },
+  {
     section: 'githubstudy',
     sectionLabel: 'GitHub Study',
     mode: 'flat',
@@ -214,6 +228,8 @@ export default withMermaid(
       nav: [
         { text: '홈', link: '/' },
         { text: '블로그', link: '/blog/index' },
+        { text: 'YouTube Summaries', link: '/youtube-summaries/index' },
+        { text: 'GitHub Summaries', link: '/github-summaries/index' },
         { text: 'GitHub Study', link: '/githubstudy/index' },
         { text: '제조 AI', link: '/manufacturing-ai/index' },
         { text: 'Vibe Coding', link: '/vibe-coding/index' },
