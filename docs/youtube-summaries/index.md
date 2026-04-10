@@ -12,6 +12,21 @@ date: 2026-04-09
   <p>YouTube 영상에서 핵심 내용을 빠르게 다시 찾을 수 있도록 구조화한 요약 아카이브입니다.</p>
 </div>
 
+## Featured
+
+<div class="poket-entry-grid">
+  <article class="poket-entry-card">
+    <div class="poket-entry-card-top">
+      <span class="poket-entry-category">YouTube</span>
+      <span class="poket-archive-date">2026-04</span>
+    </div>
+    <h3 class="poket-entry-title">
+      <a href="./2026/2026-04/2026-04-09-클로드코드채널을_통해_hermes_agent를_구독으로만_쓴다고___">클로드코드채널을 통해 Hermes Agent를 구독으로만 쓴다고???</a>
+    </h3>
+    <p class="poket-entry-preview">Anthropic 정책 변화 이후, 클로드 코드 채널과 디스코드·메모리 봇·코덱스 조합으로 구독형 클로드 활용을 재구성한 흐름 정리.</p>
+  </article>
+</div>
+
 ## Latest
 
 <div class="poket-entry-grid">
@@ -25,6 +40,15 @@ date: 2026-04-09
     </h3>
     <p class="poket-entry-preview">Anthropic 정책 변경 이후, 클로드 코드 채널과 디스코드·메모리 봇·코덱스 조합으로 구독형 클로드 활용을 재구성한 흐름 정리.</p>
   </article>
+</div>
+
+## By Topic
+
+<div class="poket-tag-pills">
+  <span class="poket-tag-pill">클로드-코드-채널 · 1</span>
+  <span class="poket-tag-pill">헤르메스-에이전트 · 1</span>
+  <span class="poket-tag-pill">디스코드-봇 · 1</span>
+  <span class="poket-tag-pill">alex-ai · 1</span>
 </div>
 
 ## Browse by Year
