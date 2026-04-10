@@ -45,11 +45,13 @@ date: 2026-04-09
 ## By Topic
 
 <div class="poket-tag-pills">
-  <span class="poket-tag-pill">클로드-코드-채널 · 1</span>
-  <span class="poket-tag-pill">헤르메스-에이전트 · 1</span>
-  <span class="poket-tag-pill">디스코드-봇 · 1</span>
-  <span class="poket-tag-pill">alex-ai · 1</span>
+  <a class="poket-tag-pill" href="./topics/클로드-코드-채널">클로드-코드-채널 · 1</a>
+  <a class="poket-tag-pill" href="./topics/헤르메스-에이전트">헤르메스-에이전트 · 1</a>
+  <a class="poket-tag-pill" href="./topics/디스코드-봇">디스코드-봇 · 1</a>
+  <a class="poket-tag-pill" href="./topics/alex-ai">alex-ai · 1</a>
 </div>
+
+[All Topics](./topics/index)
 
 ## Browse by Year
 

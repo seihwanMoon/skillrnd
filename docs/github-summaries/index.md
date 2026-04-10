@@ -45,10 +45,12 @@ date: 2026-04-09
 ## By Topic
 
 <div class="poket-tag-pills">
-  <span class="poket-tag-pill">python · 1</span>
-  <span class="poket-tag-pill">digest · 1</span>
-  <span class="poket-tag-pill">ingest · 1</span>
+  <a class="poket-tag-pill" href="./topics/python">python · 1</a>
+  <a class="poket-tag-pill" href="./topics/digest">digest · 1</a>
+  <a class="poket-tag-pill" href="./topics/ingest">ingest · 1</a>
 </div>
+
+[All Topics](./topics/index)
 
 ## Browse by Year
 
