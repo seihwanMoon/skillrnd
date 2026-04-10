@@ -103,12 +103,37 @@ docs/manufacturing-ai/
 - `blog`
 - `githubstudy`
 - `skills`
+- `youtube-summaries`
+- `github-summaries`
 
 이유:
 
 - `blog`는 연도/날짜 구조가 필요할 수 있습니다.
 - `githubstudy`는 generated 문서와 허브 재생성 로직이 있습니다.
 - `skills`는 별도 문서 규칙이 있을 수 있습니다.
+- `youtube-summaries`, `github-summaries`는 문서 수가 계속 늘어날 가능성이 높아 sidebar를 얕게 유지하는 별도 archive 패턴이 필요합니다.
+
+## summary 섹션 운영 규칙
+
+`youtube-summaries`, `github-summaries`는 일반 섹션과 다르게 “사이드바는 얕게, 탐색은 허브 페이지에서” 원칙을 따릅니다.
+
+권장 구조:
+
+```text
+docs/youtube-summaries/
+  index.md
+  2026/
+    index.md
+    2026-04/
+      index.md
+      2026-04-10-sample.md
+```
+
+원칙:
+
+- 사이드바에는 `Hub`, `Year`, `Month Overview`만 노출
+- 개별 문서는 월별 `index.md` 안에서 탐색
+- 문서 수가 늘어나도 sidebar 전체 길이는 크게 증가하지 않게 유지
 
 ## 정렬 원칙
 

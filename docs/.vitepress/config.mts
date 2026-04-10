@@ -25,7 +25,7 @@ type SidebarEntry = {
 type SidebarLeaf = { text: string; link: string }
 type SidebarGroup = { text: string; link?: string; items?: SidebarLeaf[]; collapsed?: boolean }
 
-type SidebarMode = 'flat' | 'grouped'
+type SidebarMode = 'flat' | 'grouped' | 'archive'
 
 type SectionSidebarOptions = {
   section: string
@@ -137,6 +137,38 @@ function buildSidebarItems(options: SectionSidebarOptions): SidebarGroup[] {
     return entries.map((entry) => ({ text: entry.label, link: entry.link }))
   }
 
+  if (options.mode === 'archive') {
+    const hubEntries = entries.filter((entry) => entry.relativePath === 'index')
+    const monthIndexes = entries.filter((entry) => entry.fileName === 'index' && entry.relativePath !== 'index')
+    const items: SidebarGroup[] = hubEntries.map((entry) => ({ text: entry.label, link: entry.link }))
+    const yearGroups = new Map<string, SidebarLeaf[]>()
+
+    for (const entry of monthIndexes) {
+      const parts = entry.relativePath.split('/')
+      if (parts.length < 2) continue
+      const year = parts[0]
+      const monthPath = parts.slice(0, 2).join('/')
+      const monthText = parts[1] === 'index' ? year : parts[1]
+      const leaf: SidebarLeaf = {
+        text: entry.label === 'Overview' ? monthText : entry.label,
+        link: `/${options.section}/${monthPath}`,
+      }
+      const bucket = yearGroups.get(year) ?? []
+      bucket.push(leaf)
+      yearGroups.set(year, bucket)
+    }
+
+    const grouped = Array.from(yearGroups.entries())
+      .sort((left, right) => right[0].localeCompare(left[0], 'ko'))
+      .map(([year, links]) => ({
+        text: year,
+        collapsed: true,
+        items: links.sort((left, right) => right.text.localeCompare(left.text, 'ko')),
+      }))
+
+    return [...items, ...grouped]
+  }
+
   const topLevel: SidebarGroup[] = []
   const groups = new Map<string, SidebarEntry[]>()
 
@@ -176,14 +208,14 @@ const sidebarSections: SectionSidebarOptions[] = [
   {
     section: 'youtube-summaries',
     sectionLabel: 'YouTube Summaries',
-    mode: 'grouped',
+    mode: 'archive',
     rootIndexLabel: 'Hub',
     nestedIndexLabel: 'Overview'
   },
   {
     section: 'github-summaries',
     sectionLabel: 'GitHub Summaries',
-    mode: 'grouped',
+    mode: 'archive',
     rootIndexLabel: 'Hub',
     nestedIndexLabel: 'Overview'
   },
