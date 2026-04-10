@@ -139,13 +139,25 @@ function buildSidebarItems(options: SectionSidebarOptions): SidebarGroup[] {
 
   if (options.mode === 'archive') {
     const hubEntries = entries.filter((entry) => entry.relativePath === 'index')
+    const topLevelLinks = entries.filter(
+      (entry) =>
+        entry.relativePath !== 'index' &&
+        entry.relativePath.split('/').length === 2 &&
+        entry.fileName === 'index'
+    )
     const monthIndexes = entries.filter((entry) => entry.fileName === 'index' && entry.relativePath !== 'index')
-    const items: SidebarGroup[] = hubEntries.map((entry) => ({ text: entry.label, link: entry.link }))
+    const items: SidebarGroup[] = [
+      ...hubEntries.map((entry) => ({ text: entry.label, link: entry.link })),
+      ...topLevelLinks.map((entry) => ({
+        text: entry.label,
+        link: entry.link,
+      })),
+    ]
     const yearGroups = new Map<string, SidebarLeaf[]>()
 
     for (const entry of monthIndexes) {
       const parts = entry.relativePath.split('/')
-      if (parts.length < 2) continue
+      if (parts.length < 2 || parts[0] === 'topics') continue
       const year = parts[0]
       const monthPath = parts.slice(0, 2).join('/')
       const monthText = parts[1] === 'index' ? year : parts[1]
