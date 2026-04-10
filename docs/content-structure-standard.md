@@ -134,6 +134,7 @@ docs/youtube-summaries/
 - 사이드바에는 `Hub`, `Year`, `Month Overview`만 노출
 - 개별 문서는 월별 `index.md` 안에서 탐색
 - 문서 수가 늘어나도 sidebar 전체 길이는 크게 증가하지 않게 유지
+- 섹션 루트의 `featured.json`으로 대표 문서를 수동 큐레이션 가능
 
 ## 정렬 원칙
 
