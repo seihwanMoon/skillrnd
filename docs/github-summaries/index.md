@@ -7,16 +7,35 @@ date: 2026-04-09
 
 # GitHub Summaries
 
-공개 GitHub 저장소를 초보자도 읽을 수 있는 한국어 매뉴얼형 문서로 정리한 아카이브입니다.
+<div class="poket-hub-hero">
+  <span class="poket-hub-kicker">Summary Hub</span>
+  <p>공개 GitHub 저장소를 초보자도 읽을 수 있는 한국어 매뉴얼형 문서로 정리한 아카이브입니다.</p>
+</div>
 
-## 이 섹션에서 다루는 것
+## Latest
 
-- 저장소 목적 요약
-- 폴더 구조와 실행 흐름 정리
-- 빠른 시작, 주요 파일, Mermaid 다이어그램
+<div class="poket-entry-grid">
+  <article class="poket-entry-card">
+    <div class="poket-entry-card-top">
+      <span class="poket-entry-category">GitHub</span>
+      <span class="poket-archive-date">2026-04</span>
+    </div>
+    <h3 class="poket-entry-title">
+      <a href="./2026/2026-04/2026-04-09-gitingest">gitingest</a>
+    </h3>
+    <p class="poket-entry-preview">GitHub URL이나 로컬 디렉터리를 LLM 입력용 텍스트 digest로 바꾸는 Python 도구와 운영 흐름 정리.</p>
+  </article>
+</div>
 
-## 운영 원칙
+## Browse by Year
 
-- 공개 repo 루트 URL만 1차 지원
-- 구조와 실행 흐름을 우선 설명
-- 불확실한 내용은 `추정`, `확인 필요`로 표시
+<div class="poket-entry-grid">
+  <article class="poket-entry-card">
+    <div class="poket-entry-card-top">
+      <span class="poket-entry-category">Archive</span>
+      <span class="poket-archive-date">1 month</span>
+    </div>
+    <h3 class="poket-entry-title"><a href="./2026/index">2026</a></h3>
+    <p class="poket-entry-preview">연도별 아카이브 진입점</p>
+  </article>
+</div>
