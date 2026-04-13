@@ -141,9 +141,7 @@ function buildSidebarItems(options: SectionSidebarOptions): SidebarGroup[] {
     const hubEntries = entries.filter((entry) => entry.relativePath === 'index')
     const topLevelLinks = entries.filter(
       (entry) =>
-        entry.relativePath !== 'index' &&
-        entry.relativePath.split('/').length === 2 &&
-        entry.fileName === 'index'
+        entry.relativePath === 'topics/index'
     )
     const monthIndexes = entries.filter((entry) => entry.fileName === 'index' && entry.relativePath !== 'index')
     const items: SidebarGroup[] = [
@@ -157,10 +155,10 @@ function buildSidebarItems(options: SectionSidebarOptions): SidebarGroup[] {
 
     for (const entry of monthIndexes) {
       const parts = entry.relativePath.split('/')
-      if (parts.length < 2 || parts[0] === 'topics') continue
+      if (parts.length < 3 || parts[0] === 'topics') continue
       const year = parts[0]
       const monthPath = parts.slice(0, 2).join('/')
-      const monthText = parts[1] === 'index' ? year : parts[1]
+      const monthText = parts[1]
       const leaf: SidebarLeaf = {
         text: entry.label === 'Overview' ? monthText : entry.label,
         link: `/${options.section}/${monthPath}`,
